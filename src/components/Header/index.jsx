@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { Welcome } from "../Welcome";
+import { Logo } from "../Logo";
 
 const Container = styled.header`
     width: 100%;
@@ -20,6 +21,7 @@ const Container = styled.header`
 const Header = () => {
     return (
         <Container>
+            <Logo></Logo>
             <Welcome>Maze Constructions, su socio confiable en Los Santos.</Welcome>
         </Container>
     );
