@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { Welcome } from "../Welcome";
 import { Logo } from "../Logo";
+import { Language } from "../Language";
 
 const Container = styled.header`
     width: 100%;
@@ -16,12 +17,24 @@ const Container = styled.header`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-`
+`;
+
+const Box = styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: #4d35354e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
 
 const Header = () => {
     return (
         <Container>
-            <Logo></Logo>
+            <Box>
+                <Logo></Logo>
+                <Language></Language>
+            </Box>
             <Welcome>Maze Constructions, su socio confiable en Los Santos.</Welcome>
         </Container>
     );
