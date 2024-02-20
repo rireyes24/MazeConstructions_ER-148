@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import { Welcome } from "../Welcome";
 import { Logo } from "../Logo";
 import { Language } from "../Language";
+import { Navigator } from "../Navigator";
 
 const Container = styled.header`
     width: 100%;
@@ -36,6 +37,7 @@ const Header = () => {
                 <Language></Language>
             </Box>
             <Welcome>Maze Constructions, su socio confiable en Los Santos.</Welcome>
+            <Navigator></Navigator>
         </Container>
     );
 };
