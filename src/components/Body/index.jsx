@@ -30,13 +30,15 @@ const Welcome = styled(Sections)`
 
 const Specialty = styled(Sections)`
     width: 100%;
-    height: 30vh;
+    height: 520px;
     background-color: #EDEDED;
+    justify-content: space-around;
 `;
 
 const Team = styled(Sections)`
     width: 100%;
-    height: 30vh;
+    height: 580px;        
+    justify-content: space-around;
 `;
 
 const Location = styled(Sections)`
@@ -48,9 +50,11 @@ const Location = styled(Sections)`
 `;
 
 const Box = styled.div`
-    width: 100%;
+    width: 80%;
     height: 300px;
     display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 `;
 
 const MiniBox = styled.div`
@@ -71,10 +75,44 @@ const Body = () => {
             <Specialty>
                 <Title>Nuestra Especialidad</Title>
                 <Description>Nos especializamos en una amplia gama de servicios de construcción, desde proyectos residenciales hasta comerciales, asegurando resultados excepcionales en cada paso del camino.</Description>
+                <Box>
+                    <Image 
+                        url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-casas_pduxo2.jpg" 
+                        name="Tractor Naranja"
+                        width="300px"
+                    />
+                    <Image 
+                        url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-locales_kntlgk.jpg" 
+                        name="Tractor Naranja"
+                        width="300px"
+                    />
+                    <Image 
+                        url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-edificios_gtaksa.jpg" 
+                        name="Tractor Naranja"
+                        width="300px"
+                    />
+                </Box>
             </Specialty>
             <Team>
                 <Title>Nuestro Equipo</Title>
                 <Description>Nuestro equipo altamente calificado de arquitectos, ingenieros y constructores trabaja de manera colaborativa para ofrecer soluciones innovadoras y personalizadas que se ajusten a las necesidades específicas de cada cliente.</Description>
+                <Box>
+                    <Image 
+                        url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708551688/2024/MazeConstructions/team-photo1_dtixcs.jpg" 
+                        name="Tractor Naranja"
+                        width="380px"
+                    />
+                    <Image 
+                        url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708551688/2024/MazeConstructions/team-photo2_nfz6xd.jpg" 
+                        name="Tractor Naranja"
+                        width="260px"
+                    />
+                    <Image 
+                        url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708551858/2024/MazeConstructions/team-photo3_kj4qqv.jpg" 
+                        name="Tractor Naranja"
+                        width="260px"
+                    />
+                </Box>
             </Team>
             <Location>
                 <Title>Nuestras Ubicaciones</Title>

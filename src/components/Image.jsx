@@ -9,7 +9,7 @@ const Container = styled.img`
 
 const Image = (props) => {
     return(
-        <Container src={props.url} alt={props.name} />
+        <Container src={props.url} alt={props.name} style={{width: props.width, height: props.height}} />
     )
 };
 
