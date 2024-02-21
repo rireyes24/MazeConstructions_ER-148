@@ -1,6 +1,7 @@
 import { styled } from "styled-components"
 import { Title } from "../../components/Title"
 import { Description } from "../../components/Description"
+import { Image } from "../Image"
 
 const Container = styled.main`
     width: 100vw; 
@@ -11,23 +12,34 @@ const Container = styled.main`
     align-items: center;
 `
 
-const Welcome = styled.section`
+const Sections = styled.section`
     width: 100%;
-    height: 30vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
-const Specialty = styled.section`
+const Welcome = styled(Sections)`
+    height: 500px;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 60% 40%;
+`;
+
+
+const Specialty = styled(Sections)`
     width: 100%;
     height: 30vh;
     background-color: #EDEDED;
 `;
 
-const Team = styled.section`
+const Team = styled(Sections)`
     width: 100%;
     height: 30vh;
 `;
 
-const Location = styled.section`
+const Location = styled(Sections)`
     width: 100%;
     height: 30vh;
     display: flex;
@@ -51,6 +63,10 @@ const Body = () => {
             <Welcome>
                 <Title>Bienvenido a Maze Constructions</Title>
                 <Description>En Maze Constructions nos enorgullece ser líderes en la industria de la construcción en Los Santos. Con una larga trayectoria de excelencia y compromiso con la calidad, somos reconocidos por nuestra habilidad para convertir los sueños de nuestros clientes en realidad.</Description>
+                <Image 
+                    url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708533723/2024/MazeConstructions/tractor-1_gujeul.jpg" 
+                    name="Tractor Naranja"
+                />
             </Welcome>
             <Specialty>
                 <Title>Nuestra Especialidad</Title>
