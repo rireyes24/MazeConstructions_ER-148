@@ -43,9 +43,10 @@ const Team = styled(Sections)`
 
 const Location = styled(Sections)`
     width: 100%;
-    height: 30vh;
+    height: 620px;
     display: flex;
     flex-direction: column;
+    padding: 20px 0px;    
     background-color: #EDEDED;
 `;
 
@@ -61,6 +62,22 @@ const MiniBox = styled.div`
     width: 300px;
     height: 300px;    
 `;
+
+const City = styled.h4`
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+`;
+
+const Address = styled.h5`
+    font-size: 14px;    
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+`;
+
+
 const Body = () => {
     return (
         <Container>
@@ -118,16 +135,31 @@ const Body = () => {
                 <Title>Nuestras Ubicaciones</Title>
                 <Box>
                     <MiniBox>
-                        <h3>Los Santos</h3>
-                        <p>555 Boulevard de la Victoria, Los Santos</p>
+                        <City>Los Santos</City>
+                        <Address>555 Boulevard de la Victoria, Los Santos</Address>
+                        <Image 
+                            url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708552848/2024/MazeConstructions/los-santos_sfxcmh.png" 
+                            name="Tractor Naranja"
+                            width="300px"
+                         />
                     </MiniBox>
                     <MiniBox>
-                        <h3>Vice City</h3>
-                        <p>321 Avenida Ocean Beach, Vice City</p>
+                        <City>Vice City</City>
+                        <Address>321 Avenida Ocean Beach, Vice City</Address>
+                        <Image 
+                            url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708553013/2024/MazeConstructions/vice-city_ch2ubf.png" 
+                            name="Tractor Naranja"
+                            width="300px"
+                        />
                     </MiniBox>
                     <MiniBox>
-                        <h3>Liberty City</h3>
-                        <p>123 Liberty Avenue, Liberty City</p>
+                        <City>Liberty City</City>
+                        <Address>123 Liberty Avenue, Liberty City</Address>
+                        <Image 
+                            url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708553153/2024/MazeConstructions/liberty-city_tedwlg.png" 
+                            name="Tractor Naranja"
+                            width="300px"
+                        />
                     </MiniBox>
                 </Box>
             </Location>
