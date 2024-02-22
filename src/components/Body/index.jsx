@@ -39,7 +39,7 @@ const Specialty = styled(Sections)`
 
 const Team = styled(Sections)`
     width: 100%;
-    height: 580px;        
+    height: 630px;        
     justify-content: space-around;
     padding: 34px 0px;
 `;
@@ -62,6 +62,18 @@ const Box = styled.div`
     grid-template-rows: 80% 20%;
 
     place-content: center;
+    margin-top: 20px;
+`;
+
+const BoxTeam = styled.div`
+    width: 80%;
+    height: 360px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    place-content: center;
+    place-items: center;
+    align-items: center;
     margin-top: 20px;
 `;
 
@@ -141,8 +153,12 @@ const Body = () => {
             </Specialty>
             <Team>
                 <Title>Nuestro Equipo</Title>
-                <Description>Nuestro equipo altamente calificado de arquitectos, ingenieros y constructores trabaja de manera colaborativa para ofrecer soluciones innovadoras y personalizadas que se ajusten a las necesidades específicas de cada cliente.</Description>
-                <Box>
+                <Description width={"66%"}>
+                    Nuestro <b>equipo altamente calificado</b> de arquitectos, ingenieros y constructores trabaja 
+                    de forma <b>profesional</b> y <b>personalizada</b> para que se ajusten a las necesidades específicas
+                     de cada cliente.
+                </Description>
+                <BoxTeam>
                     <Image 
                         url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708551688/2024/MazeConstructions/team-photo1_dtixcs.jpg" 
                         name="Tractor Naranja"
@@ -158,7 +174,7 @@ const Body = () => {
                         name="Tractor Naranja"
                         width="260px"
                     />
-                </Box>
+                </BoxTeam>
             </Team>
             <Location>
                 <Title>Nuestras Ubicaciones</Title>
