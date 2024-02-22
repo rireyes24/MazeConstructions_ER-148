@@ -7,8 +7,8 @@ const Container = styled.p`
     justify-self: center;    
 `;
 
-const Description = ({ children }) => {
-    return <Container>{children}</Container>;
+const Description = ({ children, width }) => {
+    return <Container style={{ width: width }}>{children}</Container>;
 };
 
 export { Description }

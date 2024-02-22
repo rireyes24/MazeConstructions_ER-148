@@ -5,6 +5,9 @@ const Container = styled.img`
     height: 280px;
     border-radius: 18px;
     object-fit: cover;
+    
+    align-self: center;
+    justify-self: center;
 `;
 
 const Image = (props) => {

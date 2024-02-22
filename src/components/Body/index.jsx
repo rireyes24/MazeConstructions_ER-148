@@ -31,15 +31,17 @@ const Welcome = styled(Sections)`
 
 const Specialty = styled(Sections)`
     width: 100%;
-    height: 520px;
+    height: 680px;
     background-color: #EDEDED;
     justify-content: space-around;
+    padding: 34px 0px;
 `;
 
 const Team = styled(Sections)`
     width: 100%;
     height: 580px;        
     justify-content: space-around;
+    padding: 34px 0px;
 `;
 
 const Location = styled(Sections)`
@@ -49,13 +51,17 @@ const Location = styled(Sections)`
     flex-direction: column;
     padding: 20px 0px;    
     background-color: #EDEDED;
+    padding: 34px 0px;
 `;
 
 const Box = styled.div`
     width: 80%;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
+    height: 360px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80% 20%;
+
+    place-content: center;
     margin-top: 20px;
 `;
 
@@ -78,6 +84,16 @@ const Address = styled.h5`
     text-align: center;
 `;
 
+const H5 = styled.h5`
+    width: 84%;
+    font-size: 14px;    
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+    align-self: bottom;
+    justify-self: center;
+`
+
 
 const Body = () => {
     return (
@@ -97,23 +113,30 @@ const Body = () => {
             </Welcome>
             <Specialty>
                 <Title>Nuestra Especialidad</Title>
-                <Description>Nos especializamos en una amplia gama de servicios de construcción, desde proyectos residenciales hasta comerciales, asegurando resultados excepcionales en cada paso del camino.</Description>
+                <Description width={"66%"}>Nos especializamos en una amplia gama de servicios de construcción, desde proyectos residenciales hasta comerciales, asegurando resultados excepcionales en cada paso del camino.</Description>
                 <Box>
+                   
                     <Image 
                         url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-casas_pduxo2.jpg" 
                         name="Tractor Naranja"
-                        width="300px"
-                    />
+                        width="260px"
+                    />       
+                              
                     <Image 
                         url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-locales_kntlgk.jpg" 
                         name="Tractor Naranja"
-                        width="300px"
+                        width="260px"
                     />
+
                     <Image 
                         url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-edificios_gtaksa.jpg" 
                         name="Tractor Naranja"
-                        width="300px"
+                        width="260px"
                     />
+
+                    <H5>Construcción de casa <br/> Pinewood Boulevard, Los Santos</H5>
+                    <H5>Construcción de centro comercial <br/> Coconut Beach, Vice City</H5>
+                    <H5>Construcción de edificio <br/> Libery Avenue, Liberty City</H5>
                 </Box>
             </Specialty>
             <Team>
