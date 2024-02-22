@@ -43,7 +43,7 @@ const Header = () => {
                 <Logo></Logo>
                 <Language></Language>
             </Box>
-            <Welcome>Maze Constructions, su socio confiable en Los Santos.</Welcome>
+            <Welcome>Somos tu socio confiable en Los Santos, Vice City & Liberty City.</Welcome>            
             <Navigator></Navigator>
         </Container>
        </Background>

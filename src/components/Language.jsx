@@ -13,6 +13,7 @@ const Container = styled.button`
     
     grid-row: 1;
     margin-right: 42px;
+    margin-bottom: 28px;
 `;
 
 const Icon = styled.span`
@@ -28,6 +29,7 @@ const Icon = styled.span`
 const Text = styled.h3`
     font-size: 18px;
     margin: 0;
+    color: #E7E7DD;
 `;
 
 

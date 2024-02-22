@@ -4,6 +4,7 @@ const Container = styled.h1`
     width: 76%;    
     height: 140px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 

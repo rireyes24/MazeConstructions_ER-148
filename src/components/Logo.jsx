@@ -8,7 +8,7 @@ const Container = styled.span`
     align-items: center;
     margin-left: 52px;
 
-    background-image: url("https://res.cloudinary.com/dejj8n6g7/image/upload/v1708450789/2024/MazeConstructions/logo-principal_wsedny.svg");
+    background-image: url("https://res.cloudinary.com/dejj8n6g7/image/upload/v1708620375/2024/MazeConstructions/logo-principal3_gdho7w.svg");    
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
