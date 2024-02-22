@@ -2,16 +2,17 @@ import { styled } from "styled-components";
 
 const Container = styled.h2`
     width: 80%;
-    font-size: 26px;
+    font-size: 28px;
     color: #FFC500;
     grid-row: 1 / 2;
     grid-column: 1 / 3;
     justify-self: center;
     text-align: center;
+    letter-spacing: 1px;
 `;
 
 const Title = ({children}) => {
-    return <Container>{children}</Container>;
+    return <Container>{children.toUpperCase()}</Container>;
 };
 
 export { Title }
