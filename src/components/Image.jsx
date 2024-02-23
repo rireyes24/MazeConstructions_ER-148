@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 const Container = styled.img`
-    width: 450px;
+    width: 300px;
     height: 280px;
     border-radius: 18px;
     object-fit: cover;

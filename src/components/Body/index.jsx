@@ -4,7 +4,7 @@ import { Description } from "../../components/Description"
 import { Image } from "../Image"
 
 const Container = styled.main`
-    width: 100vw; 
+    width: 100%; 
     background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
