@@ -1,7 +1,8 @@
 import { styled } from "styled-components"
 import { Title } from "../../components/Title"
 import { Description } from "../../components/Description"
-import { Image } from "../Image"
+import { Image } from "../../components/Image"
+import { WelcomeToMaze } from "./Sections/WelcomeToMaze"
 
 const Container = styled.main`
     width: 100%; 
@@ -20,13 +21,7 @@ const Sections = styled.section`
     align-items: center;
 `;
 
-const Welcome = styled(Sections)`
-    height: 580px;
-    display: grid;
-    grid-template-rows: 30% 70%;
-    grid-template-columns: 60% 40%;
-    padding-bottom:80px;
-`;
+
 
 
 const Specialty = styled(Sections)`
@@ -107,22 +102,12 @@ const H5 = styled.h5`
 `
 
 
-const Body = () => {
+export default function Main () {
     return (
         <Container>
-            <Welcome>
-                <Title>Bienvenido a Maze Constructions</Title>
-                <Description>
-                    En <b>Maze Constructions</b> nos enorgullece ser <b>líderes</b> en la industria de la construcción en 
-                    las ciudades mas importantes de EEUU. <br/> <br/> Con <b>10 años de trayectoria</b> continuamos en siempre dar un servicio
-                    de alta calidad, somos reconocidos por nuestra habilidad para convertir los sueños de nuestros clientes
-                     en realidad.
-                </Description>                
-                <Image 
-                    url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708533723/2024/MazeConstructions/tractor-1_gujeul.jpg" 
-                    name="Tractor Naranja"
-                />
-            </Welcome>
+            <WelcomeToMaze></WelcomeToMaze>
+            
+
             <Specialty>
                 <Title>Nuestra Especialidad</Title>
                 <Description width={"66%"}>Nos especializamos en una amplia gama de servicios de construcción, desde proyectos residenciales hasta comerciales, asegurando resultados excepcionales en cada paso del camino.</Description>
@@ -176,6 +161,8 @@ const Body = () => {
                     />
                 </BoxTeam>
             </Team>
+
+
             <Location>
                 <Title>Nuestras Ubicaciones</Title>
                 <Box>
@@ -185,7 +172,8 @@ const Body = () => {
                         <Image 
                             url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708552848/2024/MazeConstructions/los-santos_sfxcmh.png" 
                             name="Tractor Naranja"
-                            width="300px"
+                            width="260px"
+                            borderRadius="6px"
                          />
                     </MiniBox>
                     <MiniBox>
@@ -212,4 +200,3 @@ const Body = () => {
     )
 }
 
-export { Body }
