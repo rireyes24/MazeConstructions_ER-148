@@ -1,8 +1,9 @@
 import { styled } from "styled-components"
 import { Title } from "../../components/Title"
 import { Description } from "../../components/Description"
-import { Image } from "../../components/Image"
-import { WelcomeToMaze } from "./Sections/WelcomeToMaze"
+import { MazeImage } from "../../components/Image"
+import WelcomeToMaze  from "./Sections/WelcomeToMaze"
+import { Specialty } from "./Sections/OurSpeciality"
 
 const Container = styled.main`
     width: 100%; 
@@ -24,13 +25,7 @@ const Sections = styled.section`
 
 
 
-const Specialty = styled(Sections)`
-    width: 100%;
-    height: 680px;
-    background-color: #EDEDED;
-    justify-content: space-around;
-    padding: 34px 0px;
-`;
+
 
 const Team = styled(Sections)`
     width: 100%;
@@ -91,51 +86,16 @@ const Address = styled.h5`
     text-align: center;
 `;
 
-const H5 = styled.h5`
-    width: 84%;
-    font-size: 14px;    
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-align: center;
-    align-self: bottom;
-    justify-self: center;
-`
 
 
 export default function Main () {
     return (
         <Container>
             <WelcomeToMaze></WelcomeToMaze>
+            <Specialty></Specialty>
             
 
-            <Specialty>
-                <Title>Nuestra Especialidad</Title>
-                <Description width={"66%"}>Nos especializamos en una amplia gama de servicios de construcción, desde proyectos residenciales hasta comerciales, asegurando resultados excepcionales en cada paso del camino.</Description>
-                <Box>
-                   
-                    <Image 
-                        url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-casas_pduxo2.jpg" 
-                        name="Tractor Naranja"
-                        width="260px"
-                    />       
-                              
-                    <Image 
-                        url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-locales_kntlgk.jpg" 
-                        name="Tractor Naranja"
-                        width="260px"
-                    />
-
-                    <Image 
-                        url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-edificios_gtaksa.jpg" 
-                        name="Tractor Naranja"
-                        width="260px"
-                    />
-
-                    <H5>Construcción de casa <br/> Pinewood Boulevard, Los Santos</H5>
-                    <H5>Construcción de centro comercial <br/> Coconut Beach, Vice City</H5>
-                    <H5>Construcción de edificio <br/> Libery Avenue, Liberty City</H5>
-                </Box>
-            </Specialty>
+           
             <Team>
                 <Title>Nuestro Equipo</Title>
                 <Description width={"66%"}>
@@ -144,17 +104,17 @@ export default function Main () {
                      de cada cliente.
                 </Description>
                 <BoxTeam>
-                    <Image 
+                    <MazeImage
                         url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708551688/2024/MazeConstructions/team-photo1_dtixcs.jpg" 
                         name="Tractor Naranja"
                         width="380px"
                     />
-                    <Image 
+                    <MazeImage
                         url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708551688/2024/MazeConstructions/team-photo2_nfz6xd.jpg" 
                         name="Tractor Naranja"
                         width="260px"
                     />
-                    <Image 
+                    <MazeImage
                         url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708551858/2024/MazeConstructions/team-photo3_kj4qqv.jpg" 
                         name="Tractor Naranja"
                         width="260px"
@@ -169,7 +129,7 @@ export default function Main () {
                     <MiniBox>
                         <City>Los Santos</City>
                         <Address>555 Boulevard de la Victoria, Los Santos</Address>
-                        <Image 
+                        <MazeImage
                             url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708552848/2024/MazeConstructions/los-santos_sfxcmh.png" 
                             name="Tractor Naranja"
                             width="260px"
@@ -179,7 +139,7 @@ export default function Main () {
                     <MiniBox>
                         <City>Vice City</City>
                         <Address>321 Avenida Ocean Beach, Vice City</Address>
-                        <Image 
+                        <MazeImage
                             url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708553013/2024/MazeConstructions/vice-city_ch2ubf.png" 
                             name="Tractor Naranja"
                             width="300px"
@@ -188,7 +148,7 @@ export default function Main () {
                     <MiniBox>
                         <City>Liberty City</City>
                         <Address>123 Liberty Avenue, Liberty City</Address>
-                        <Image 
+                        <MazeImage
                             url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708553153/2024/MazeConstructions/liberty-city_tedwlg.png" 
                             name="Tractor Naranja"
                             width="300px"
