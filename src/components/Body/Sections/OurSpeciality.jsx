@@ -40,7 +40,7 @@ const H5 = styled.h5`
 `;
 
 const Address = styled.h5`
-    width: 84%;
+    width: 100%;
     font-size: 14px;    
     font-weight: 300;
     letter-spacing: 0.5px;
@@ -53,8 +53,7 @@ const MazeImage = styled.img`
     width: 280px;
     height: 220px;
     border-radius: 14px;
-    object-fit: cover;
-    
+    object-fit: cover;    
     align-self: center;
     justify-self: center;
 
@@ -86,8 +85,8 @@ const Specialty = () => {
                 />
 
                 <H5>Construcción de casa <br/> <Address>Pinewood Boulevard, Los Santos</Address></H5>
-                <H5>Construcción de centro comercial <br/> Coconut Beach, Vice City</H5>
-                <H5>Construcción de edificio <br/> Libery Avenue, Liberty City</H5>
+                <H5>Construcción de centro comercial <br/> <Address>Coconut Beach, Vice City</Address></H5>
+                <H5>Construcción de edificio <br/> <Address>Libery Avenue, Liberty City</Address></H5>
             </Box>
         </SpecialtyContainer>
     )
