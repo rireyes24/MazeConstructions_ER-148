@@ -4,6 +4,7 @@ import { Description } from "../../components/Description"
 import { MazeImage } from "../../components/Image"
 import WelcomeToMaze  from "./Sections/WelcomeToMaze"
 import { Specialty } from "./Sections/OurSpeciality"
+import { Location } from "./Sections/OurLocation"
 
 const Container = styled.main`
     width: 100%; 
@@ -23,36 +24,11 @@ const Sections = styled.section`
 `;
 
 
-
-
-
-
 const Team = styled(Sections)`
     width: 100%;
     height: 630px;        
     justify-content: space-around;
     padding: 34px 0px;
-`;
-
-const Location = styled(Sections)`
-    width: 100%;
-    height: 620px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0px;    
-    background-color: #EDEDED;
-    padding: 34px 0px;
-`;
-
-const Box = styled.div`
-    width: 80%;
-    height: 360px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80% 20%;
-
-    place-content: center;
-    margin-top: 20px;
 `;
 
 const BoxTeam = styled.div`
@@ -67,24 +43,7 @@ const BoxTeam = styled.div`
     margin-top: 20px;
 `;
 
-const MiniBox = styled.div`
-    width: 300px;
-    height: 300px;    
-`;
 
-const City = styled.h4`
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center;
-`;
-
-const Address = styled.h5`
-    font-size: 14px;    
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-align: center;
-`;
 
 
 
@@ -93,7 +52,6 @@ export default function Main () {
         <Container>
             <WelcomeToMaze></WelcomeToMaze>
             <Specialty></Specialty>
-            
 
            
             <Team>
@@ -122,40 +80,11 @@ export default function Main () {
                 </BoxTeam>
             </Team>
 
+            
+            <Location></Location>
 
-            <Location>
-                <Title>Nuestras Ubicaciones</Title>
-                <Box>
-                    <MiniBox>
-                        <City>Los Santos</City>
-                        <Address>555 Boulevard de la Victoria, Los Santos</Address>
-                        <MazeImage
-                            url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708552848/2024/MazeConstructions/los-santos_sfxcmh.png" 
-                            name="Tractor Naranja"
-                            width="260px"
-                            borderRadius="6px"
-                         />
-                    </MiniBox>
-                    <MiniBox>
-                        <City>Vice City</City>
-                        <Address>321 Avenida Ocean Beach, Vice City</Address>
-                        <MazeImage
-                            url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708553013/2024/MazeConstructions/vice-city_ch2ubf.png" 
-                            name="Tractor Naranja"
-                            width="300px"
-                        />
-                    </MiniBox>
-                    <MiniBox>
-                        <City>Liberty City</City>
-                        <Address>123 Liberty Avenue, Liberty City</Address>
-                        <MazeImage
-                            url="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708553153/2024/MazeConstructions/liberty-city_tedwlg.png" 
-                            name="Tractor Naranja"
-                            width="300px"
-                        />
-                    </MiniBox>
-                </Box>
-            </Location>
+
+            
         </Container>
     )
 }
