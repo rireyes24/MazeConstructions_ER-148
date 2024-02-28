@@ -54,7 +54,7 @@ export default function Main () {
             <Specialty></Specialty>
 
            
-            <Team>
+            <Team id="section3">
                 <Title>Nuestro Equipo</Title>
                 <Description width={"66%"}>
                     Nuestro <b>equipo altamente calificado</b> de arquitectos, ingenieros y constructores trabaja 

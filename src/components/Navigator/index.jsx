@@ -41,13 +41,17 @@ const ListItem = styled.li`
     }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
     height: 100%;
     color: white;
     background-color: transparent;
     border: none;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const Navigator = () => {
@@ -60,16 +64,16 @@ const Navigator = () => {
         <Container>
             <ContainerList>
                 <ListItem>
-                    <Button onClick={() => handleClick(1)}>Bienvenido</Button>
+                    <Button href={"#section1"}>Bienvenido</Button>
                 </ListItem>            
                 <ListItem>
-                    <Button onClick={() => handleClick(2)}>Nuestra Especialidad</Button>
+                    <Button href={"#section2"}>Nuestra Especialidad</Button>
                 </ListItem>
                 <ListItem>
-                    <Button onClick={() => handleClick(3)}>Nuestro Equipo</Button>
+                    <Button href={"#section3"}>Nuestro Equipo</Button>
                 </ListItem>
                 <ListItem>
-                    <Button onClick={() => handleClick(4)}>Contactanos</Button>    
+                    <Button href={"#section4"}>Contactanos</Button>
                 </ListItem>
             </ContainerList>
         </Container>
