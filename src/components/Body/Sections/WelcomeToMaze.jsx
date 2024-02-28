@@ -36,7 +36,7 @@ const MazeImage = styled.img`
 
 const WelcomeToMaze = () => {
     return (
-        <Welcome>
+        <Welcome id="section1">
             <Title>Bienvenido a Maze Constructions</Title>
             <Description>
                 En <b>Maze Constructions</b> nos enorgullece ser <b>líderes</b> en la industria de la construcción en 

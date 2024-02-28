@@ -24,6 +24,6 @@ p{
   color: #2d2d2d;
 }
 
-button{
+button, a{
   font-family: "Albert Sans", sans-serif;
 }

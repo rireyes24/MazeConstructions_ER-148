@@ -64,7 +64,7 @@ const MazeImage = styled.img`
 
 const Specialty = () => {
     return (
-        <SpecialtyContainer>
+        <SpecialtyContainer id="section2">
             <Title>Nuestra Especialidad</Title>
             <Description width={"66%"}>Nos especializamos en una amplia gama de servicios de construcción, desde proyectos residenciales hasta comerciales, asegurando resultados excepcionales en cada paso del camino.</Description>
             <Box>
