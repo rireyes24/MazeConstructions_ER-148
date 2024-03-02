@@ -33,9 +33,9 @@ const Text = styled.h3`
 `;
 
 
-const Language = () => {
+const Language = ({clickON}) => {
     return (
-        <Container>
+        <Container onClick={() => clickON()}>
             <Icon />
             <Text>ES</Text>
         </Container>

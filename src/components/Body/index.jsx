@@ -5,6 +5,7 @@ import { MazeImage } from "../../components/Image"
 import WelcomeToMaze  from "./Sections/WelcomeToMaze"
 import { Specialty } from "./Sections/OurSpeciality"
 import { Location } from "./Sections/OurLocation"
+import { Contact } from "./Sections/Contact."
 
 const Container = styled.main`
     width: 100%; 
@@ -79,10 +80,9 @@ export default function Main () {
                     />
                 </BoxTeam>
             </Team>
-
             
             <Location></Location>
-
+            <Contact></Contact>
 
             
         </Container>

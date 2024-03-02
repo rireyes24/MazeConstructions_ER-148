@@ -124,10 +124,13 @@ const Navigator = () => {
                     <Button id={"button1"}>Bienvenido</Button>
                 </ListItem>            
                 <ListItem>
-                    <Button id={"button2"}>Nuestra Especialidad</Button>
+                    <Button id={"button2"}>Especialidad</Button>
                 </ListItem>
                 <ListItem>
-                    <Button id={"button3"}>Nuestro Equipo</Button>
+                    <Button id={"button3"}>Equipo</Button>
+                </ListItem>
+                <ListItem>
+                    <Button id={"button4"}>Ubicaciones</Button>
                 </ListItem>
                 <ListItem>
                     <Button id={"button4"}>Contactanos</Button>
