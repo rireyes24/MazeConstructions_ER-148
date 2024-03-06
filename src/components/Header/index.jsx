@@ -14,6 +14,10 @@ const Background = styled.header`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media(max-width: 375px) {         
+        height: 420px;    
+    }
 `;
 
 const Container = styled.div`
@@ -22,11 +26,13 @@ const Container = styled.div`
     background-color: #12121365;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 40% 30%;
+    grid-template-rows: 20% 50% 30%;
     justify-content: center;
     align-items: center;
 
-  
+    @media(max-width: 375px) {         
+        height: 420px;    
+    }
 `;
 
 const Box = styled.div`
@@ -35,6 +41,10 @@ const Box = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media(max-width: 375px) {         
+        height: 88px;
+    }
 `;
 
 const BackgorundContainer = styled.div`

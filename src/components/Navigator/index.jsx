@@ -15,10 +15,11 @@ const Container = styled.nav`
     justify-self: center;
 
     @media(max-width: 375px) {  
-        min-width: 340px;
-        height: 100px;      
-        display: flex;
-        flex-direction: column;
+        width: 312px;
+        min-width: 0px;
+        height: 80px; 
+        border-radius: 16px;
+        padding: 0px 12px;
     }
 `;
 
@@ -32,9 +33,9 @@ const ContainerList = styled.ul`
     padding: 0;
 
     @media(max-width: 375px) {  
-        height: 100px;      
-        display: flex;
-        flex-direction: column;
+        display: flex;        
+        flex-wrap: wrap;
+        align-items: center;
     }
 `;
 
@@ -53,6 +54,11 @@ const ListItem = styled.li`
         transform: scale(1.09);
         animation: transform 0.5s linear;
     }
+
+    @media(max-width: 375px) {  
+        font-size: 14px;
+        height: 32px;
+    }
 `;
 
 const Button = styled.button`
@@ -66,6 +72,10 @@ const Button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: 375px) {  
+        height: 32px;
+    }
 `;
 
 const Navigator = () => {

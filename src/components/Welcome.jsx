@@ -11,7 +11,7 @@ const Container = styled.h1`
     grid-row: 2;
     align-self: center;
     justify-self: center;
-    font-size: 28px;
+    font-size: 26px;
     letter-spacing: 1px;
 `
 

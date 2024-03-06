@@ -14,6 +14,13 @@ const Container = styled.span`
     background-position: center center;
 
     grid-row: 1;
+
+    @media(max-width: 375px) { 
+        width: 160px;
+        height: 80px;          
+        margin-left: 28px;
+        align-self: start;
+    }
 `;
 
 const Logo = () => {

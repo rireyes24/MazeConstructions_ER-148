@@ -14,6 +14,16 @@ const Container = styled.button`
     grid-row: 1;
     margin-right: 42px;
     margin-bottom: 28px;
+
+    @media(max-width: 375px) { 
+        width: 60px;
+        height: 80px;          
+        margin-left: 28px;
+        align-self: start;
+
+        margin-right: 28px;
+        margin-bottom: 28px;
+    }
 `;
 
 const Icon = styled.span`
