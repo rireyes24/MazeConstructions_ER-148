@@ -42,6 +42,11 @@ const BoxTeam = styled.div`
     place-items: center;
     align-items: center;
     margin-top: 20px;
+
+    @media(max-width: 375px) {        
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 

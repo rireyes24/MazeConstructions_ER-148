@@ -13,6 +13,13 @@ const Container = styled.nav`
 
     align-self: center;
     justify-self: center;
+
+    @media(max-width: 375px) {  
+        min-width: 340px;
+        height: 100px;      
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 const ContainerList = styled.ul`
@@ -23,6 +30,12 @@ const ContainerList = styled.ul`
     align-items: center;
     margin: 0;
     padding: 0;
+
+    @media(max-width: 375px) {  
+        height: 100px;      
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 const ListItem = styled.li`
