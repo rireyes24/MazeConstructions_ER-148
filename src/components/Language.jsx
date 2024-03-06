@@ -15,7 +15,7 @@ const Container = styled.button`
     margin-right: 42px;
     margin-bottom: 28px;
 
-    @media(max-width: 375px) { 
+    @media(max-width: 425px) { 
         width: 60px;
         height: 80px;          
         margin-left: 28px;

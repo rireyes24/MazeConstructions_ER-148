@@ -15,7 +15,7 @@ const Background = styled.header`
     background-repeat: no-repeat;
     background-position: center;
 
-    @media(max-width: 375px) {         
+    @media(max-width: 425px) {         
         height: 420px;    
     }
 `;
@@ -30,7 +30,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-    @media(max-width: 375px) {         
+    @media(max-width: 425px) {         
         height: 420px;    
     }
 `;
@@ -42,7 +42,7 @@ const Box = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media(max-width: 375px) {         
+    @media(max-width: 425px) {         
         height: 88px;
     }
 `;

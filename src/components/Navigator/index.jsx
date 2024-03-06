@@ -14,7 +14,7 @@ const Container = styled.nav`
     align-self: center;
     justify-self: center;
 
-    @media(max-width: 375px) {  
+    @media(max-width: 425px) {  
         width: 312px;
         min-width: 0px;
         height: 80px; 
@@ -32,7 +32,7 @@ const ContainerList = styled.ul`
     margin: 0;
     padding: 0;
 
-    @media(max-width: 375px) {  
+    @media(max-width: 425px) {  
         display: flex;        
         flex-wrap: wrap;
         align-items: center;
@@ -55,7 +55,7 @@ const ListItem = styled.li`
         animation: transform 0.5s linear;
     }
 
-    @media(max-width: 375px) {  
+    @media(max-width: 425px) {  
         font-size: 14px;
         height: 32px;
     }
@@ -73,7 +73,7 @@ const Button = styled.button`
     justify-content: center;
     align-items: center;
 
-    @media(max-width: 375px) {  
+    @media(max-width: 425px) {  
         height: 32px;
     }
 `;

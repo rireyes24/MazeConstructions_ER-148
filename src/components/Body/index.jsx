@@ -43,7 +43,7 @@ const BoxTeam = styled.div`
     align-items: center;
     margin-top: 20px;
 
-    @media(max-width: 375px) {        
+    @media(max-width: 425px) {        
         display: flex;
         flex-direction: column;
     }
