@@ -13,6 +13,12 @@ const Container = styled.img`
     -webkit-box-shadow: 3px 2px 18px -3px #1b1b1b;
     -moz-box-shadow: 3px 2px 18px -3px #1b1b1b;
     box-shadow: 3px 2px 18px -3px #1b1b1b;
+
+    @media(max-width: 425px) {         
+        min-width: 200px;
+        max-width: 320px;
+        height: 280px;       
+    }
 `;
 
 const MazeImage = (props) => {

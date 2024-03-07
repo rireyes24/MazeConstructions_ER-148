@@ -9,6 +9,11 @@ const Container = styled.h2`
     justify-self: center;
     text-align: center;
     letter-spacing: 1px;
+
+    @media(max-width: 425px) {         
+        font-size: 24px;
+        margin-top: 14px;
+    }
 `;
 
 const Title = ({children}) => {

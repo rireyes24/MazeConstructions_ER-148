@@ -4,7 +4,11 @@ const Container = styled.p`
     font-size: 20px;
     width: 80%;
     color: #2d2d2d;
-    justify-self: center;    
+    justify-self: center; 
+    
+    @media(max-width: 425px) {         
+        font-size: 14px;        
+    }
 `;
 
 const Description = (props) => {
