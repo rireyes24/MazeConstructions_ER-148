@@ -101,6 +101,7 @@ const MazeImage = styled.img`
         margin-bottom: 18px;
         border-radius: 10px;
         margin-top: 20px;
+        border-radius: 10px;
     }
 `;
 
