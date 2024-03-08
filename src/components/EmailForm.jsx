@@ -9,6 +9,10 @@ const Container = styled.div`
     color: #2b2b2b;
     align-self: center;
     justify-self: center;
+
+    @media(max-width: 425px) {        
+        grid-row: 3 / 4;
+    }
 `;
 
 const TextBox = styled.input.attrs({ type: "text"})`
@@ -61,14 +65,7 @@ const SubmitButton = styled.button`
     font-weight: bold;
 `;
 
-const Line = styled.div`
-    width: 2px;
-    height: 88%;
-    background-color: #a7a7a7;
-    align-self: center;
-    justify-self: center;
-    border-radius: 50px;
-`;
+
 
 const FormContainer = styled.form`
     width: 100%;
@@ -76,6 +73,11 @@ const FormContainer = styled.form`
     display: flex;
     flex-direction: column;
     margin-top: 62px;
+
+    @media(max-width: 425px) {
+        height: 338px;                
+        margin-top: 0;
+    }
 `;
 
 const EmailForm = () => {
@@ -136,8 +138,7 @@ const EmailForm = () => {
 
     return(
         <>
-            <Container>
-                <h3>Envianos un correo para agendar una cita </h3>
+            <Container>                
                 <FormContainer onSubmit={sendMessage} method="POST">  
                     <TextBox 
                         placeholder="Nombre*" 
@@ -179,12 +180,6 @@ const EmailForm = () => {
                     <SubmitButton type="submit">ENVIAR</SubmitButton>
                     {msjSended ? <p>Mensaje Enviado, Pronto nos contactaremos con usted</p> : <></> }
                 </FormContainer>
-            </Container>
-
-            <Line></Line>
-
-            <Container>
-                <h3>Envianos un mensaje al indox o siguenos en nuestras redes sociales</h3>
             </Container>
         </>
     );
