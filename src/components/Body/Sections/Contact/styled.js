@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { Title } from "../../Title";
-import { EmailForm } from "../../EmailForm";
 
 const Container = styled.section`
     width: 100%;
@@ -81,22 +79,4 @@ const H3 = styled.h3`
     margin-bottom: 24px;
 `;
 
-const Contact = () => {
-    return(
-        <Container>
-            <Title>CONTACTANOS</Title>
-            <ContainerContact>
-                <ContainerNetworks>
-                    <H3>Envianos un mensaje al indox o siguenos en nuestras redes sociales</H3>
-                </ContainerNetworks>
-                <Line></Line>
-                <ContainerForm>
-                        <H3>Envianos un correo para agendar una cita</H3>
-                    <EmailForm></EmailForm>
-                </ContainerForm>
-            </ContainerContact>
-        </Container>
-    );
-}
-
-export { Contact }
+export { Container, ContainerContact, Line, ContainerNetworks, ContainerForm, H3 }
