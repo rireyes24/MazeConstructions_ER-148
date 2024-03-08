@@ -12,8 +12,8 @@ const Container = styled.section`
     padding: 34px 2%;
 
     @media(max-width: 425px) {        
-        height: 840px;
-        padding: 0px 2%
+        height: 900px;
+        padding: 0px 0%
     }
 `;
 
@@ -67,6 +67,7 @@ const ContainerForm = styled.div`
     justify-self: center;    
 
     @media(max-width: 425px) {
+        width: 98%;
         grid-row: 3 / 4;
         display: flex;
         flex-direction: column;

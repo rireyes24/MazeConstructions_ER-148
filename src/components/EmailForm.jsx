@@ -32,6 +32,12 @@ const TextBox = styled.input.attrs({ type: "text"})`
         color: #2b2b2b;
     }
 
+    @media(max-width: 425px) {
+        margin-bottom: 4px;
+        height: 32px;
+        border-radius: 8px;
+    }
+
    
 `;
 
@@ -48,6 +54,12 @@ const TextArea = styled.input.attrs({ type: "textarea"})`
         border: 2px solid #009e28; /* Cambia el color del borde a rojo */
         outline: none; /* Quita el contorno predeterminado */
     }
+
+    @media(max-width: 425px) {        
+        margin-top: 18px;
+        margin-bottom: 14px;
+        border-radius: 8px;
+    }
 `;
 
 const SubmitButton = styled.button`
@@ -63,6 +75,10 @@ const SubmitButton = styled.button`
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: bold;
+
+    @media(max-width: 425px) {
+        margin-top: 6px;
+    }
 `;
 
 
@@ -75,9 +91,25 @@ const FormContainer = styled.form`
     margin-top: 62px;
 
     @media(max-width: 425px) {
-        height: 338px;                
+        height: 400px;                
         margin-top: 0;
+        justify-content: space-around;
     }
+`;
+
+const Error = styled.p`
+    font-size: 14px;
+    color: red;
+
+    @media(max-width: 425px) {
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+`;
+
+const Send = styled.p`
+    font-size: 16px;
+    color: green;
 `;
 
 const EmailForm = () => {
@@ -148,7 +180,7 @@ const EmailForm = () => {
                         value={nameClient}
                         onChange={(e) => setNameClient(e.target.value)}
                     ></TextBox>
-                    {hasContentName ? <p>OBLIGATORIO: Por favor ingrese su nombre!</p> : <></>}
+                    {hasContentName ? <Error>OBLIGATORIO: Por favor ingrese su nombre!</Error> : <></>}
                    
                    <TextBox 
                         placeholder="Email*" 
@@ -157,7 +189,7 @@ const EmailForm = () => {
                         name="email" value={email}
                         onChange={(e) => setEmail(e.target?.value)}
                     ></TextBox>
-                     {hasContentEmail ? <p>OBLIGATORIO: Por favor ingrese su correo!</p> : <></>}
+                     {hasContentEmail ? <Error>OBLIGATORIO: Por favor ingrese su correo!</Error> : <></>}
 
                     <TextBox 
                         placeholder="Asunto" 
@@ -175,10 +207,10 @@ const EmailForm = () => {
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                     ></TextArea>
-                    {hasContentMessage ? <p>OBLIGATORIO: Por favor escriba un mensaje!</p> : <></>}
+                    {hasContentMessage ? <Error>OBLIGATORIO: Por favor escriba un mensaje!</Error> : <></>}
                    
                     <SubmitButton type="submit">ENVIAR</SubmitButton>
-                    {msjSended ? <p>Mensaje Enviado, Pronto nos contactaremos con usted</p> : <></> }
+                    {msjSended ? <Send>CORREO ENVIADO: Pronto nos contactaremos</Send> : <></> }
                 </FormContainer>
             </Container>
         </>
