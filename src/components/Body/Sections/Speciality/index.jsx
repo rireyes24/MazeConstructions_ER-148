@@ -3,12 +3,19 @@ import { Title } from "../../../Title";
 import { Description } from "../../../Description";
 import { dataSpecialty } from "../../../../data/dataSpecialty";
 
-const Specialty = () => {
+const Specialty = (props) => {
     return (
         <SpecialtyContainer id="section2">
-            <Title>Nuestra Especialidad</Title>
-            <Description>Nos especializamos en una amplia gama de servicios de construcción, desde proyectos residenciales hasta comerciales, asegurando resultados excepcionales en cada paso del camino.</Description>
-           
+            {props.selectLanguage === "ES" ?
+                <Title>Nuestra Especialidad</Title>:
+                <Title>Our Specialty</Title>
+            }     
+
+            {props.selectLanguage === "ES" ?
+                <Description>Nos especializamos en una amplia gama de servicios de construcción, desde proyectos residenciales hasta comerciales, asegurando resultados excepcionales en cada paso del camino.</Description>:
+                <Description>We specialize in a wide range of construction services, from residential to commercial projects, ensuring exceptional results at every step of the way.</Description>
+            }  
+                       
             <ContainerBox>
                 {dataSpecialty.map((data) => {
                     return(
