@@ -24,7 +24,10 @@ const Specialty = (props) => {
                             src={data.url} 
                             alt={data.alt}                    
                         />
-                        <H5>{data.title} <br/> <Address>{data.address}</Address></H5>
+                        {props.selectLanguage === "ES" ? 
+                            <H5>{data.title} <br/> <Address>{data.address}</Address></H5> : 
+                            <H5>{data.titleEN} <br/> <Address>{data.address}</Address></H5>
+                        }
                         </Box>
                     )
                 })}
