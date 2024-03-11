@@ -13,7 +13,7 @@ const Location = (props) => {
                     <MiniBox>
                         <MiniBoxData>
                             <City>Los Santos</City>
-                            <Address>555 Boulevard de la Victoria, Los Santos</Address>
+                            <Address>555 Victory Boulevard, Los Santos</Address>
                         </MiniBoxData>
                         <MazeImage
                             src="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708552848/2024/MazeConstructions/los-santos_sfxcmh.png" 
@@ -24,7 +24,7 @@ const Location = (props) => {
                     <MiniBox>
                         <MiniBoxData>
                             <City>Vice City</City>
-                            <Address>321 Avenida Ocean Beach, Vice City</Address>
+                            <Address>321 Ocean Beach Avenue, Vice City</Address>
                         </MiniBoxData>
                         <MazeImage
                             src="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708553013/2024/MazeConstructions/vice-city_ch2ubf.png" 
