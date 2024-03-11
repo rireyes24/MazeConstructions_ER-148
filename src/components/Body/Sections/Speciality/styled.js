@@ -21,27 +21,49 @@ const SpecialtyContainer = styled(Sections)`
         justify-content: space-around;
         padding: 0px 0px;
         padding-bottom: 8px;
-        height: 1100px;
+        height: 1140px;
     }
 `;
 
 const Box = styled.div`
     width: 100%;
-    height: 360px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80% 20%;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     place-content: center;
-    margin-top: 20px;
+    
 
     @media(max-width: 425px) { 
-        width: 80%;       
+        width: 88%;       
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 240px;
         margin-top: 0;
         margin-bottom: 10px;
+    }
+`;
+
+const ContainerBox = styled.div`
+    width: 100%;
+    height: 390px;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    margin-top: 20px;
+
+    @media(max-width: 425px) { 
+        width: 98%; 
+        height: 840px;      
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 0;
     }
 `;
 
@@ -53,10 +75,12 @@ const H5 = styled.h5`
     text-align: center;
     align-self: bottom;
     justify-self: center;
+    margin-top: 24px;
 
     @media(max-width: 425px) {        
         align-self: center;
         justify-self: center;
+        margin-top: 8px;
     }
 `;
 
@@ -90,4 +114,4 @@ const MazeImage = styled.img`
     }
 `;
 
-export { SpecialtyContainer, Box, H5, Address, MazeImage }
+export { SpecialtyContainer, Box, H5, Address, MazeImage, ContainerBox }
