@@ -1,10 +1,14 @@
 import { ContainerLocation, Box, MiniBox, MiniBoxData, City, Address, MazeImage } from "./styled"
 import { Title } from "../../../Title";
 
-const Location = () => {
+const Location = (props) => {
     return(
         <ContainerLocation id="section4">
-                <Title>Nuestras Ubicaciones</Title>
+                
+                {props.selectLanguage === "ES" ?
+                    <Title>Nuestras Ubicaciones</Title> :
+                    <Title>Our Locations</Title>
+                }
                 <Box>
                     <MiniBox>
                         <MiniBoxData>
