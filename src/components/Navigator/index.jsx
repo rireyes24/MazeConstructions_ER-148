@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Container, ContainerList, ListItem, Button } from "./styled"
 
 
-const Navigator = () => {
+const Navigator = (props) => {
 
     useEffect(() => {
         const btnScroll1 = document.getElementById("button1");
@@ -65,23 +65,44 @@ const Navigator = () => {
     }, [])
 
     return (
-        <Container>
+        <Container>            
             <ContainerList>
-                <ListItem>
-                    <Button id={"button1"}>Bienvenido</Button>
-                </ListItem>            
-                <ListItem>
-                    <Button id={"button2"}>Especialidad</Button>
-                </ListItem>
-                <ListItem>
-                    <Button id={"button3"}>Equipo</Button>
-                </ListItem>
-                <ListItem>
-                    <Button id={"button4"}>Ubicaciones</Button>
-                </ListItem>
-                <ListItem>
-                    <Button id={"button4"}>Contactanos</Button>
-                </ListItem>
+                {props.selectLanguage === "ES" ? 
+                    <>
+                        <ListItem>
+                            <Button id={"button1"}>Bienvenido</Button>
+                        </ListItem>            
+                        <ListItem>
+                            <Button id={"button2"}>Especialidad</Button>
+                        </ListItem>
+                        <ListItem>
+                            <Button id={"button3"}>Equipo</Button>
+                        </ListItem>
+                        <ListItem>
+                            <Button id={"button4"}>Ubicaciones</Button>
+                        </ListItem>
+                        <ListItem>
+                            <Button id={"button4"}>Contactanos</Button>
+                        </ListItem>
+                    </> :
+                    <>
+                        <ListItem>
+                            <Button id={"button1"}>Welcome</Button>
+                        </ListItem>            
+                        <ListItem>
+                            <Button id={"button2"}>Specialty</Button>
+                        </ListItem>
+                        <ListItem>
+                            <Button id={"button3"}>Team</Button>
+                        </ListItem>
+                        <ListItem>
+                            <Button id={"button4"}>Locations</Button>
+                        </ListItem>
+                        <ListItem>
+                            <Button id={"button4"}>Contact Us</Button>
+                        </ListItem>
+                    </>                
+                }
             </ContainerList>
         </Container>
     )

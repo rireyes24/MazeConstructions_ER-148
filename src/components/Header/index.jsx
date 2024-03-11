@@ -5,7 +5,7 @@ import { Language } from "../Language";
 import { Navigator } from "../Navigator";
 import { useState } from "react";
 
-const Header = () => {
+const Header = (props) => {
 
     const [buttonState, setButtonState] = useState(false);
 
@@ -13,8 +13,9 @@ const Header = () => {
         setButtonState(!buttonState);
     }
 
-    function selectLanguage(){
+    function selectLanguage(lan){
         setButtonState(false);
+        props.setSelectLanguage(lan);
     }
 
     return (
@@ -27,12 +28,20 @@ const Header = () => {
             {buttonState ? 
                 <BackgorundContainer>
                     <Title>SELECCIONA TU IDOMA</Title>
-                    <BtnSpanish onClick={selectLanguage}>Español</BtnSpanish>
-                    <BtnEnglish onClick={selectLanguage}>Ingles</BtnEnglish>
+                    <BtnSpanish onClick={() => selectLanguage("ES")}>Español</BtnSpanish>
+                    <BtnEnglish onClick={() => {
+                        selectLanguage("EN")
+                        console.log(props.selectLanguage);
+                    }}>Ingles</BtnEnglish>
                 </BackgorundContainer> : <></>
             }
-            <Welcome>Somos tu socio confiable en Los Santos, Vice City & Liberty City.</Welcome>            
-            <Navigator></Navigator>
+            {props.selectLanguage === "ES" ? 
+                <Welcome>Somos tu socio confiable en Los Santos, Vice City & Liberty City.</Welcome> :
+                <Welcome>We are your reliable partner in Los Santos, Vice City & Liberty City.</Welcome>     
+            }          
+            <Navigator
+                selectLanguage={props.selectLanguage} 
+            ></Navigator>
         </Container>
        </Background>
     );
