@@ -1,6 +1,7 @@
 import { TeamContainer, BoxTeam, MazeImage } from "./styled"
 import { Title } from "../../../Title"
 import { Description } from "../../../Description"
+import { dataTeam } from "../../../../data/dataTeam"
 
 const Team = () => {
     return(
@@ -13,18 +14,14 @@ const Team = () => {
                      de cada cliente.
                 </Description>
                 <BoxTeam>
-                    <MazeImage
-                        src="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708551688/2024/MazeConstructions/team-photo1_dtixcs.jpg" 
-                        name="Tractor Naranja"
-                    />
-                    <MazeImage
-                        src="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708551688/2024/MazeConstructions/team-photo2_nfz6xd.jpg" 
-                        name="Tractor Naranja"
-                    />
-                    <MazeImage
-                        src="https://res.cloudinary.com/dejj8n6g7/image/upload/v1708551858/2024/MazeConstructions/team-photo3_kj4qqv.jpg" 
-                        name="Tractor Naranja"
-                    />
+                    {dataTeam.map((item) => {
+                        return(
+                            <MazeImage
+                                src={item.url} 
+                                name={item.alt}
+                            />
+                        );
+                    })}                   
                 </BoxTeam>
             </TeamContainer>
         </>

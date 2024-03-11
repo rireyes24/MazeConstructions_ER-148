@@ -21,7 +21,7 @@ const TeamContainer = styled(Sections)`
 `;
 
 const BoxTeam = styled.div`
-    width: 80%;
+    width: 98%;
     height: 360px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
