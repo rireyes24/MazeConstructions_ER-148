@@ -2,10 +2,13 @@ import { Container, ContainerContact, Line, ContainerNetworks, ContainerForm, H3
 import { Title } from "../../../Title";
 import { EmailForm } from "../../../EmailForm";
 
-const Contact = () => {
+const Contact = (props) => {
     return(
         <Container>
-            <Title>CONTACTANOS</Title>
+            {props.selectLanguage === "ES" ? 
+                <Title>CONTACTANOS</Title> : 
+                <Title>CONTACT US</Title>
+            }
             <ContainerContact>
                 <ContainerNetworks>
                     <H3>Envianos un mensaje al indox o siguenos en nuestras redes sociales</H3>
