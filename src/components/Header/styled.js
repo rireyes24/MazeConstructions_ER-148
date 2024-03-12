@@ -50,8 +50,7 @@ const BackgorundContainer = styled.div`
     top: 92px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 30% 30%;
-    background-image: url("/public/language-background.svg");
+    grid-template-rows: 20% 20% 30% 30%;   
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -79,6 +78,9 @@ const BtnLanguage = styled.button`
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
 `;
 
 const BtnSpanish = styled(BtnLanguage)`
@@ -89,4 +91,14 @@ const BtnEnglish = styled(BtnLanguage)`
     grid-row: 4 / 5;
 `;
 
-export { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, BtnEnglish }
+const Flag = styled.span`
+    display: block;
+    width: 70px;
+    height: 40px;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;  
+    margin-right: 6px;  
+`;
+
+export { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, BtnEnglish, Flag }

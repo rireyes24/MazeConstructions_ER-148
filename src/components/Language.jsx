@@ -27,27 +27,33 @@ const Container = styled.button`
 `;
 
 const Icon = styled.span`
-    width: 40px;
-    height: 40px;
-    background-image: url("https://res.cloudinary.com/dejj8n6g7/image/upload/v1708452365/2024/MazeConstructions/flag-spain_uaag52.png");
-    background-size: cover;
+    width: 52px;
+    height: 32px;    
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;  
-    margin-right: 6px;  
+    margin-right: 12px;  
 `;
 
 const Text = styled.h3`
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
     color: #E7E7DD;
 `;
 
 
-const Language = ({clickON}) => {
+const Language = ({clickON, selectLanguage}) => {
     return (
         <Container onClick={() => clickON()}>
-            <Icon />
-            <Text>ES</Text>
+            {selectLanguage === "ES" ? 
+                <Icon style={{backgroundImage: `url(${"/public/guatemalaGT.png"})`}}/> : 
+                <Icon style={{backgroundImage: `url(${"/public/united-statesUS.png"})`}}/>
+            }
+            {selectLanguage === "ES" ? 
+                <Text>ES</Text> : 
+                <Text>EN</Text>
+            }
+            
         </Container>
     );
 };
