@@ -44,16 +44,18 @@ const Box = styled.div`
     }
 `;
 
-const MiniBox = styled.div`
+const MiniBox = styled.a`
     width: 300px;
     height: 460px;   
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 42% 58%;
     grid-row: 1 / 3;
     justify-self: center;
     align-self: center;
     background-color: #f8f8f8; 
+    border-radius: 16px;
+    text-decoration: none;
 
     -webkit-box-shadow: 3px 2px 18px -3px #535353a8;
     -moz-box-shadow: 3px 2px 18px -3px #535353a8;
@@ -76,11 +78,11 @@ const MiniBoxData = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 10% 0;  
+    padding: 12% 0;  
 `;
 
 const City = styled.h4`
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     letter-spacing: 1px;
     text-align: center;
@@ -96,7 +98,7 @@ const Phone = styled.h5`
 `;
 
 const Address = styled.h5`
-    font-size: 14px;    
+    font-size: 12px;    
     font-weight: 500;
     letter-spacing: 1px;
     text-align: center;
@@ -104,11 +106,11 @@ const Address = styled.h5`
 `;
 
 const MazeImage = styled.img`    
-    width: 240px;
-    height: 240px;
-    border-radius: 500px;
+    width: 100%;
+    height: 260px;
+    border-radius: 0 0px 16px 16px;
     object-fit: cover;    
-    align-self: center;
+    align-self: end;
     justify-self: center;
 
     @media(max-width: 425px) {        

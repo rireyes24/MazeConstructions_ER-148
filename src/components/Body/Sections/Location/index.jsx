@@ -13,7 +13,7 @@ const Location = (props) => {
                 <Box>
                     {dataLocation.map((data) => {
                         return(
-                            <MiniBox>
+                            <MiniBox href={data.map} target="_blank">
                                 <MiniBoxData>
                                     <City>{data.city}</City>
                                     <Phone>{data.telephone}</Phone>
