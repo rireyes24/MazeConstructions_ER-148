@@ -15,7 +15,7 @@ const Contact = (props) => {
                 </ContainerNetworks>
                 <Line></Line>
                 <ContainerForm>
-                        <H3>Envianos un correo para agendar una cita</H3>
+                    <H3>Envianos un correo para agendar una cita</H3>
                     <EmailForm></EmailForm>
                 </ContainerForm>
             </ContainerContact>

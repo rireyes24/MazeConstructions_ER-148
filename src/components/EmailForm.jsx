@@ -88,7 +88,7 @@ const FormContainer = styled.form`
     height:420px;
     display: flex;
     flex-direction: column;
-    margin-top: 62px;
+    margin-top: 34px;
 
     @media(max-width: 425px) {
         height: 400px;                

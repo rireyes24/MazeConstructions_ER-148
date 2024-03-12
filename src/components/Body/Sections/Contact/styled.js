@@ -22,7 +22,7 @@ const ContainerContact = styled.div`
     display: grid;
     grid-template-columns: 48% 4% 48%;
     grid-template-rows: 100%;
-    margin-top: 58px;
+    margin-top: 58px;    
 
     @media(max-width: 425px) {        
         grid-template-columns: 100%;
@@ -53,6 +53,9 @@ const ContainerNetworks = styled.div`
     align-self: center;
     justify-self: center;
 
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+
     @media(max-width: 425px) {
         grid-row: 1 / 2;
     }
@@ -63,7 +66,12 @@ const ContainerForm = styled.div`
     height: 96%;    
     color: #2b2b2b;
     align-self: center;
-    justify-self: center;    
+    justify-self: center;
+    display: flex;
+    flex-direction: column; 
+    
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 
     @media(max-width: 425px) {
         width: 98%;
