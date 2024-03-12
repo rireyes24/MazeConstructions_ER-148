@@ -18,7 +18,9 @@ function App() {
         <Main 
           selectLanguage={selectLanguage} 
         ></Main>
-        <Footer></Footer>
+        <Footer
+          selectLanguage={selectLanguage} 
+        ></Footer>
       </div>     
     </>
   )
