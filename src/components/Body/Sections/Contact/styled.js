@@ -7,6 +7,7 @@ const Container = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color:  #FFFFFF;
     padding: 34px 2%;
 
     @media(max-width: 425px) {        

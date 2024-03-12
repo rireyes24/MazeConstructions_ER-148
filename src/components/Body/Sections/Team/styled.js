@@ -12,6 +12,7 @@ const TeamContainer = styled(Sections)`
     width: 100%;
     height: 630px;        
     justify-content: space-around;
+    background-color:  #FFFFFF;
     padding: 34px 0px;
 
     @media(max-width: 425px) {        

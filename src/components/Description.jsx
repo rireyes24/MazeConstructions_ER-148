@@ -3,8 +3,9 @@ import { styled } from "styled-components";
 const Container = styled.p`
     font-size: 20px;
     width: 80%;
-    color: #2d2d2d;
+    color: #10113D;
     justify-self: center; 
+    text-align: center;
     
     @media(max-width: 425px) {         
         font-size: 14px;        
