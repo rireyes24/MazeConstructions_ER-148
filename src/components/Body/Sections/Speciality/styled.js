@@ -11,7 +11,7 @@ const Sections = styled.section`
 const SpecialtyContainer = styled(Sections)`
     width: 100%;
     height: 680px;
-    background-color: #FFFFFF;
+    background-color: #f8f8f8;
     justify-content: space-around;
     padding: 34px 0px;
 
