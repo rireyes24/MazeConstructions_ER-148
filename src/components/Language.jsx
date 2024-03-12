@@ -14,15 +14,16 @@ const Container = styled.button`
     grid-row: 1;
     margin-right: 42px;
     margin-bottom: 28px;
+    margin-top: 42px;
 
     @media(max-width: 425px) { 
-        width: 60px;
-        height: 80px;          
-        margin-left: 28px;
+        width: 72px;
+        height: 50px;
         align-self: start;
 
         margin-right: 28px;
         margin-bottom: 28px;
+        margin-top: 28px;
     }
 `;
 
@@ -33,12 +34,22 @@ const Icon = styled.span`
     background-repeat: no-repeat;
     background-position: center center;  
     margin-right: 12px;  
+
+    @media(max-width: 425px) { 
+        margin-right: 8px;
+        width: 38px;
+        height: 32px;  
+    }
 `;
 
 const Text = styled.h3`
     font-size: 20px;
     margin: 0;
     color: #E7E7DD;
+
+    @media(max-width: 425px) { 
+        font-size: 20px; 
+    }
 `;
 
 
@@ -52,8 +63,7 @@ const Language = ({clickON, selectLanguage}) => {
             {selectLanguage === "ES" ? 
                 <Text>ES</Text> : 
                 <Text>EN</Text>
-            }
-            
+            }            
         </Container>
     );
 };
