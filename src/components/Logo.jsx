@@ -23,9 +23,9 @@ const Container = styled.span`
     }
 `;
 
-const Logo = () => {
+const Logo = ({height}) => {
     return (
-        <Container></Container>
+        <Container style={{height: height}}></Container>
     );
 };
 

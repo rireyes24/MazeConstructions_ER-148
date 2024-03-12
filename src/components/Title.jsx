@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 const Container = styled.h2`
     width: 80%;
     font-size: 32px;
-    color: #ffe600;
+    color: #FFC500;
     grid-row: 1 / 2;
     grid-column: 1 / 3;
     justify-self: center;

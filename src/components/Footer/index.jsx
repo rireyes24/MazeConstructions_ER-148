@@ -1,22 +1,58 @@
 import { styled } from "styled-components"
+import { Logo } from "../Logo";
 
 const Container = styled.footer`
     width: 100%;
-    height: 40vh;
-    background-color: brown;
+    height: 28vh;
+    background-color: #292929;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://res.cloudinary.com/dejj8n6g7/image/upload/v1708531295/2024/MazeConstructions/banner-con-filtro_igdmpx.jpg");
-    background-size: cover;
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    padding: 4% 2%;
+`;
+
+const MyLogoContainer = styled.div`
+    width: 200px;
+    height: 110px;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 100%;
+    grid-column: 3 / 4;
+    justify-self: center;
+    align-self: center;
+`;
+
+const Text = styled.p`
+    width: 98%;
+    height: 80px;
+    color: white;
+`;
+
+const MyLogo = styled.a`
+    width: 160px;
+    height: 80px;
     background-repeat: no-repeat;
-    background-position: bottom;
-`
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-self: right;
+    align-self: center;
+`;
 
 const Footer = () => {
     return (
         <Container>
-            <h1>Footer</h1>
+            <Logo height={"68px"}></Logo>
+            <MyLogoContainer>
+                <Text>Sitio Web diseñado por: </Text>
+                <MyLogo 
+                    style={{backgroundImage: `url(${"/public/Rireyes_Light.svg"})`}}
+                    href="https://rireyesdev24.netlify.app/"
+                    target="_blank"
+                ></MyLogo>
+            </MyLogoContainer>
         </Container>
     )
 }
