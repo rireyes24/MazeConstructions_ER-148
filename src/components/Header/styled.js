@@ -43,44 +43,51 @@ const Box = styled.div`
 `;
 
 const BackgorundContainer = styled.div`
-    width: 192px;
-    height: 260px;
+    width: 318px;
+    height: 240px;
     position: absolute;
     right: 4vh;
     top: 92px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 30% 30%;   
+    grid-template-rows: 14% 16% 30% 30%;   
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-    padding-bottom: 20px;
+    background-repeat: no-repeat;    
 `;
 
 const Title = styled.h2`
     width: 80%;
-    height: 100%;
+    height: 40%;
     grid-row: 2 / 3;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
-    align-self: center;
+    align-self: end;
     justify-self: center;
     display: grid;
     place-content: center;
+    color: #413A3A;
 
 `;
 
 const BtnLanguage = styled.button`
-    width: 80%;
-    height: 48px;
+    width: 188px;
+    height: 52px;
     justify-self: center;
-    align-self: center;
-    border-radius: 8px;
+    align-self: end;
+    border-radius: 6px;
     border: none;
     cursor: pointer;
     display: flex;    
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #6e6e6e;
+    padding: 2% 0;
+    background-color: #413A3A;
+
+    &:hover {
+        transform: scale(1.04)
+    }
 `;
 
 const BtnSpanish = styled(BtnLanguage)`
@@ -93,12 +100,24 @@ const BtnEnglish = styled(BtnLanguage)`
 
 const Flag = styled.span`
     display: block;
-    width: 70px;
-    height: 40px;    
+    width: 60px;
+    height: 32px;    
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;  
-    margin-right: 6px;  
 `;
 
-export { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, BtnEnglish, Flag }
+const Text = styled.h3`
+    width: 78px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0;
+    color: #E7E7DD;
+
+    @media(max-width: 425px) { 
+        font-size: 20px; 
+    }
+`;
+
+export { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, BtnEnglish, Flag, Text }

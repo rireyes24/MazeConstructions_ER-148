@@ -1,4 +1,4 @@
-import { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, BtnEnglish, Flag } from "./styled";
+import { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, BtnEnglish, Flag, Text } from "./styled";
 import { Welcome } from "../Welcome";
 import { Logo } from "../Logo";
 import { Language } from "../Language";
@@ -26,19 +26,19 @@ const Header = (props) => {
                 <Language clickON={handleClick} selectLanguage={props.selectLanguage} ></Language>
             </Box>
             {buttonState ? 
-                <BackgorundContainer>
+                <BackgorundContainer style={{backgroundImage: `url(${"/public/background-lan.svg"})`}}>
                     <Title>SELECCIONA TU IDOMA</Title>
                     <BtnSpanish                       
                         onClick={() => selectLanguage("ES")}
                     >
                         <Flag style={{backgroundImage: `url(${"/public/guatemalaGT.png"})`}}></Flag>
-                        Español
+                        <Text>ESPAÑOL</Text>
                     </BtnSpanish>
                     <BtnEnglish 
                         onClick={() => selectLanguage("EN")
                     }>
                         <Flag style={{backgroundImage: `url(${"/public/united-statesUS.png"})`}}></Flag>
-                        Ingles
+                        <Text>INGLES</Text>
                     </BtnEnglish>
                 </BackgorundContainer> : <></>
             }
