@@ -53,7 +53,15 @@ const BackgorundContainer = styled.div`
     grid-template-rows: 14% 16% 30% 30%;   
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;  
+
+    @media(max-width: 425px) { 
+        width: 268px;
+        height: 240px;
+        grid-template-rows: 14% 20% 29% 28%;   
+        right: 3vh;
+        top: 58px;
+    }  
 `;
 
 const Title = styled.h2`
@@ -67,6 +75,10 @@ const Title = styled.h2`
     display: grid;
     place-content: center;
     color: #413A3A;
+
+    @media(max-width: 425px) { 
+        font-size: 14px;
+    } 
 
 `;
 
@@ -88,6 +100,12 @@ const BtnLanguage = styled.button`
     &:hover {
         transform: scale(1.04)
     }
+
+    @media(max-width: 425px) { 
+        width: 148px;
+        height: 42px;
+        align-self: center;
+    }  
 `;
 
 const BtnSpanish = styled(BtnLanguage)`
@@ -105,6 +123,11 @@ const Flag = styled.span`
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;  
+
+    @media(max-width: 425px) { 
+        width: 48px;
+        height: 28px;
+    }  
 `;
 
 const Text = styled.h3`
@@ -116,7 +139,7 @@ const Text = styled.h3`
     color: #E7E7DD;
 
     @media(max-width: 425px) { 
-        font-size: 20px; 
+        font-size: 14px; 
     }
 `;
 
