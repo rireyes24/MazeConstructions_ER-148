@@ -9,6 +9,7 @@ const Container = styled.h2`
     justify-self: center;
     text-align: center;
     letter-spacing: 1px;
+    margin-bottom: 24px;
 
     @media(max-width: 425px) {         
         font-size: 24px;
