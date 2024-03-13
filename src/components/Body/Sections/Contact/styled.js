@@ -52,6 +52,10 @@ const ContainerNetworks = styled.div`
     color: #2b2b2b;
     align-self: center;
     justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
     grid-column: 3 / 4;
     grid-row: 1 / 2;
