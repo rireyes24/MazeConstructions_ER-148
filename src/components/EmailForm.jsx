@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { useForm, ValidationError } from "@formspree/react";
 import { useEffect, useState } from "react";
 
 
@@ -23,7 +22,6 @@ const TextBox = styled.input.attrs({ type: "text"})`
     border: 1px solid #2b2b2b;
     color: #2b2b2b;
     padding-left: 12px;
-    margin-bottom: 28px;
     color: #2b2b2b;
 
     &:focus {
@@ -49,6 +47,7 @@ const TextArea = styled.input.attrs({ type: "textarea"})`
     border: 1px solid #2b2b2b;
     color: #2b2b2b;
     padding-left: 12px;
+    margin-top: 18px;
     
     &:focus {
         border: 2px solid #009e28; /* Cambia el color del borde a rojo */
@@ -71,7 +70,7 @@ const SubmitButton = styled.button`
     border: none;
     cursor: pointer;
     color: #ececec;    
-    margin-top: 32px;
+    margin-top: 12px;
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: bold;
@@ -88,7 +87,8 @@ const FormContainer = styled.form`
     height:420px;
     display: flex;
     flex-direction: column;
-    margin-top: 34px;
+    justify-content: space-around;
+    margin-top: 8px;
 
     @media(max-width: 425px) {
         height: 400px;                
@@ -98,9 +98,9 @@ const FormContainer = styled.form`
 `;
 
 const Error = styled.p`
-    font-size: 14px;
+    font-size: 13px;
     color: red;
-
+    margin: 10px;
     @media(max-width: 425px) {
         font-size: 12px;
         margin-bottom: 18px;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.section`
     width: 100%;
-    height: 68vh;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@ const Container = styled.section`
 
     @media(max-width: 425px) {        
         height: 900px;
-        padding: 0px 0%
+        padding: 0px 0%;
     }
 `;
 
@@ -22,7 +22,7 @@ const ContainerContact = styled.div`
     display: grid;
     grid-template-columns: 48% 4% 48%;
     grid-template-rows: 100%;
-    margin-top: 58px;    
+    margin-top: 18px;    
 
     @media(max-width: 425px) {        
         grid-template-columns: 100%;
