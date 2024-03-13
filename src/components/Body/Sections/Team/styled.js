@@ -10,7 +10,7 @@ const Sections = styled.section`
 
 const TeamContainer = styled(Sections)`
     width: 100%;
-    height: 630px;        
+    height: 660px;        
     justify-content: space-around;
     background-color:  #FFFFFF;
     padding: 34px 0px;
@@ -22,7 +22,7 @@ const TeamContainer = styled(Sections)`
 `;
 
 const BoxTeam = styled.div`
-    width: 98%;
+    width: 92%;
     height: 360px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -43,21 +43,27 @@ const BoxTeam = styled.div`
 
 const MazeImage = styled.img`    
     width: 280px;
-    height: 220px;
-    border-radius: 14px;
+    height: 320px;
+    border-radius: 12px;
     object-fit: cover;    
     align-self: center;
     justify-self: center;
+    transition: transform ease 0.5s;
 
-    -webkit-box-shadow: 3px 2px 18px -3px #1b1b1b;
-    -moz-box-shadow: 3px 2px 18px -3px #1b1b1b;
-    box-shadow: 3px 2px 18px -3px #1b1b1b;
+    -webkit-box-shadow: 3px 2px 18px -3px #535353a8;
+    -moz-box-shadow: 3px 2px 18px -3px #535353a8;
+    box-shadow: 3px 2px 18px -3px #535353a8;
 
     @media(max-width: 425px) {        
         width: 280px;
         height: 180px;
         margin-bottom: 0px;
         border-radius: 10px;
+    }
+
+    &:hover {
+        transform: scale(1.04);
+        transition: ease 0.5s;
     }
 `;
 
