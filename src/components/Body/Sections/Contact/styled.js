@@ -11,7 +11,7 @@ const Container = styled.section`
     padding: 34px 2%;
 
     @media(max-width: 425px) {        
-        height: 900px;
+        height: 1000px;
         padding: 0px 0%;
     }
 `;

@@ -12,6 +12,10 @@ const NetworksTable = styled.div`
     align-self: center;
     justify-self: center;
     margin-bottom: 110px;
+
+    @media(max-width: 425px) {        
+        margin-bottom: 0px;
+    }
 `;
 
 const Network = styled.a`
