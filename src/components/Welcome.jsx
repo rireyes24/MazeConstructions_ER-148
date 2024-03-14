@@ -13,6 +13,10 @@ const Container = styled.h1`
     justify-self: center;
     font-size: 26px;
     letter-spacing: 1px;
+
+    @media(max-width: 425px) {
+        text-align: center;
+    }
 `
 
 const Welcome = (props) => {
