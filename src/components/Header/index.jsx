@@ -26,18 +26,18 @@ const Header = (props) => {
                 <Language clickON={handleClick} selectLanguage={props.selectLanguage} ></Language>
             </Box>
             {buttonState ? 
-                <BackgorundContainer style={{backgroundImage: `url(${"/public/background-lan.svg"})`}}>
+                <BackgorundContainer style={{backgroundImage: `url(${"/background-lan.svg"})`}}>
                     <Title>SELECCIONA TU IDOMA</Title>
                     <BtnSpanish                       
                         onClick={() => selectLanguage("ES")}
                     >
-                        <Flag style={{backgroundImage: `url(${"/public/guatemalaGT.png"})`}}></Flag>
+                        <Flag style={{backgroundImage: `url(${"/guatemalaGT.png"})`}}></Flag>
                         <Text>ESPAÑOL</Text>
                     </BtnSpanish>
                     <BtnEnglish 
                         onClick={() => selectLanguage("EN")
                     }>
-                        <Flag style={{backgroundImage: `url(${"/public/united-statesUS.png"})`}}></Flag>
+                        <Flag style={{backgroundImage: `url(${"/united-statesUS.png"})`}}></Flag>
                         <Text>INGLES</Text>
                     </BtnEnglish>
                 </BackgorundContainer> : <></>

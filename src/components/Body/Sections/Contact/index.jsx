@@ -40,22 +40,22 @@ const Network = styled.a`
 const dataNetworks = [
     {
         id: "instagram",
-        icon: "/public/networks/instagram.svg",
+        icon: "/networks/instagram.svg",
         url: "",
     },
     {
         id: "x",
-        icon: "/public/networks/X.svg",
+        icon: "/networks/X.svg",
         url: "",
     },
     {
         id: "facebook",
-        icon: "/public/networks/facebook.svg",
+        icon: "/networks/facebook.svg",
         url: "",
     },
     {
         id: "youtube",
-        icon: "/public/networks/youtube.svg",
+        icon: "/networks/youtube.svg",
         url: "",
     },
     {
@@ -65,7 +65,7 @@ const dataNetworks = [
     },
     {
         id: "tiktok",
-        icon: "/public/networks/tiktok.svg",
+        icon: "/networks/tiktok.svg",
         url: "",
     }
 ]
