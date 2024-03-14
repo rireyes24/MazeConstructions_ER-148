@@ -16,10 +16,10 @@ const Container = styled.span`
     grid-row: 1;
 
     @media(max-width: 425px) { 
-        width: 160px;
-        height: 80px;          
+        width: 180px;
+        height: 42px;          
         margin-left: 28px;
-        align-self: start;
+        align-self: center;
     }
 `;
 
