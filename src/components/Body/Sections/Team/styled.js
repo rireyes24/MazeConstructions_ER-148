@@ -16,7 +16,7 @@ const TeamContainer = styled(Sections)`
     padding: 34px 0px;
 
     @media(max-width: 425px) {        
-        height: 860px;
+        height: 1060px;
         padding: 0px 0px;
     }
 `;
@@ -36,7 +36,7 @@ const BoxTeam = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 620px;
+        height: 820px;
         margin-top: 0px;
     }
 `;
@@ -55,8 +55,8 @@ const MazeImage = styled.img`
     box-shadow: 3px 2px 18px -3px #535353a8;
 
     @media(max-width: 425px) {        
-        width: 280px;
-        height: 180px;
+        width: 300px;
+        height: 220px;
         margin-bottom: 0px;
         border-radius: 10px;
     }
