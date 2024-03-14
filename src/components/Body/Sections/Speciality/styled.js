@@ -20,8 +20,8 @@ const SpecialtyContainer = styled(Sections)`
         flex-direction: column;     
         justify-content: space-around;
         padding: 0px 0px;
-        padding-bottom: 8px;
-        height: 1140px;
+        padding-bottom: 24px;
+        height: 1440px;
     }
 `;
 
@@ -45,16 +45,6 @@ const Box = styled.div`
     -moz-box-shadow: 3px 2px 18px -3px #535353a8;
     box-shadow: 3px 2px 18px -3px #535353a8;
     
-
-    @media(max-width: 425px) { 
-        width: 88%;       
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 240px;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
 `;
 
 const ContainerBox = styled.div`
@@ -68,7 +58,7 @@ const ContainerBox = styled.div`
 
     @media(max-width: 425px) { 
         width: 98%; 
-        height: 840px;      
+        height: 1140px;      
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -83,13 +73,6 @@ const MazeImage = styled.img`
     object-fit: cover;    
     align-self: center;
     justify-self: center;
-
-    @media(max-width: 425px) {        
-        width: 280px;
-        height: 180px;
-        margin-bottom: 18px;
-        border-radius: 10px;
-    }
 `;
 
 const MiniBoxData = styled.div`
