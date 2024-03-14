@@ -22,12 +22,20 @@ const MyLogoContainer = styled.div`
     grid-column: 3 / 4;
     justify-self: center;
     align-self: center;
+
+    @media (max-width: 425px) {
+        width: 100px;
+    }
 `;
 
 const Text = styled.p`
     width: 98%;
     height: 80px;
     color: white;
+
+    @media (max-width: 425px) {
+        font-size: 12px;
+    }
 `;
 
 const MyLogo = styled.a`
@@ -39,6 +47,10 @@ const MyLogo = styled.a`
     display: flex;
     justify-self: right;
     align-self: center;
+
+    @media (max-width: 425px) {
+        width: 80px;
+    }
 `;
 
 const Footer = ({selectLanguage}) => {

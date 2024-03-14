@@ -20,10 +20,11 @@ const ContainerLocation = styled(Sections)`
     padding: 34px 0px;
 
     @media(max-width: 425px) {        
-        height: 1160px;
+        height: 1400px;
         display: flex;
         flex-direction: column;
         padding: 0px 0px;
+        padding-bottom: 20px;
     }
 `;
 
@@ -38,9 +39,10 @@ const Box = styled.div`
     margin-top: 20px;
 
     @media(max-width: 425px) {        
-        height: 1000px;
+        height: 1640px;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
 `;
 
@@ -63,9 +65,9 @@ const MiniBox = styled.a`
 
     @media(max-width: 425px) {        
         display: flex;
-        height: 380px; 
+        height: 400px; 
         flex-direction: column;
-        margin-bottom: 18px;
+        margin-bottom: 20px;
     }
 `;
 // #EEA016
@@ -114,12 +116,8 @@ const MazeImage = styled.img`
     justify-self: center;
 
     @media(max-width: 425px) {        
-        width: 280px;
-        height: 240px;
-        margin-bottom: 18px;
-        border-radius: 10px;
-        margin-top: 20px;
-        border-radius: 10px;
+        width: 100%;
+        height: 100%;
     }
 `;
 

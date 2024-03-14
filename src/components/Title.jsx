@@ -13,7 +13,7 @@ const Container = styled.h2`
 
     @media(max-width: 425px) {         
         font-size: 24px;
-        margin-top: 14px;
+        margin-top: 32px;
     }
 `;
 

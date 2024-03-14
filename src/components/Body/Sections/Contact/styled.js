@@ -62,6 +62,7 @@ const ContainerNetworks = styled.div`
 
     @media(max-width: 425px) {
         grid-row: 1 / 2;
+        grid-column: 1 / 2;
     }
 `;
 
