@@ -16,8 +16,8 @@ const Container = styled.span`
     grid-row: 1;
 
     @media(max-width: 425px) { 
-        width: 180px;
-        height: 42px;          
+        width: 200px;
+        height: 52px;          
         margin-left: 28px;
         align-self: center;
     }

@@ -11,7 +11,7 @@ const Background = styled.header`
     background-position: center;
 
     @media(max-width: 425px) {         
-        height: 440px;            
+        height: 480px;            
     }
 `;
 
@@ -21,12 +21,12 @@ const Container = styled.div`
     background-color: #12121365;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 56% 24%;
+    grid-template-rows: 20% 50% 30%;
     justify-content: center;
     align-items: center;
 
     @media(max-width: 425px) {         
-        height: 440px;    
+        height: 480px;    
     }
 `;
 
