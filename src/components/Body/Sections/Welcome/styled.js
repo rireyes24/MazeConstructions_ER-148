@@ -9,7 +9,7 @@ const Sections = styled.section`
 `;
 
 const Welcome = styled(Sections)`
-    height: 580px;
+    height: 680px;
     display: grid;
     grid-template-rows: 30% 70%;
     grid-template-columns: 55% 45%;
@@ -31,7 +31,6 @@ const MazeImage = styled.img`
     
     align-self: center;
     justify-self: right;
-    margin-right: 20%;
     border-radius: 20px 0px 20px 0px;
     object-fit: cover;
 
@@ -48,4 +47,17 @@ const MazeImage = styled.img`
     }
 `;
 
-export { Sections, Welcome, MazeImage }
+const ContainerImage = styled.div`
+    position: relative;
+    width: 480px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    align-self: center;
+    justify-self: center;
+`;
+
+export { Sections, Welcome, MazeImage, ContainerImage }
