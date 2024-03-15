@@ -21,6 +21,7 @@ const Welcome = styled(Sections)`
         flex-direction: column;     
         justify-content: space-around;
         padding-bottom: 8px;
+        height: 740px;
     }
 `;
 
@@ -58,6 +59,12 @@ const ContainerImage = styled.div`
     margin-top: 30px;
     align-self: center;
     justify-self: center;
+
+    @media(max-width: 425px) {         
+        width: 100%;
+        margin-top: 0px;
+        height: 280px;
+    }
 `;
 
 export { Sections, Welcome, MazeImage, ContainerImage }
