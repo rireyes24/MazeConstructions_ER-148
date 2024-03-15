@@ -14,7 +14,7 @@ const Container = styled.nav`
     @media(max-width: 425px) {  
         width: 100%;
         min-width: 0px;
-        height: 90px; 
+        height: 100px; 
         padding: 0px 12px;
     }
 `;

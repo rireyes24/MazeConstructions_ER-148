@@ -11,7 +11,7 @@ const Background = styled.header`
     background-position: center;
 
     @media(max-width: 425px) {         
-        height: 480px;            
+        height: 420px;            
     }
 `;
 
@@ -26,7 +26,8 @@ const Container = styled.div`
     align-items: center;
 
     @media(max-width: 425px) {         
-        height: 480px;    
+        height: 420px;     
+        grid-template-rows: 20% 80%;
     }
 `;
 
