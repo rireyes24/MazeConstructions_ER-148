@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Container, ContainerList, ListItem, Button } from "./styled"
+import { Container, ContainerList, ListItem, Button, Line } from "./styled"
 
 
 const Navigator = (props) => {
@@ -70,36 +70,44 @@ const Navigator = (props) => {
                 {props.selectLanguage === "ES" ? 
                     <>
                         <ListItem>
-                            <Button id={"button1"}>Bienvenido</Button>
-                        </ListItem>            
-                        <ListItem>
-                            <Button id={"button2"}>Especialidad</Button>
+                            <Button id={"button1"}>BIENVENIDO</Button>
                         </ListItem>
+                        <Line></Line>          
                         <ListItem>
-                            <Button id={"button3"}>Equipo</Button>
+                            <Button id={"button2"}>ESPECIALIDAD</Button>
                         </ListItem>
+                        <Line></Line> 
                         <ListItem>
-                            <Button id={"button4"}>Ubicaciones</Button>
+                            <Button id={"button3"}>EQUIPO</Button>
                         </ListItem>
+                        <Line></Line> 
                         <ListItem>
-                            <Button id={"button4"}>Contactanos</Button>
+                            <Button id={"button4"}>UBICACIONES</Button>
+                        </ListItem>
+                        <Line></Line> 
+                        <ListItem>
+                            <Button id={"button4"}>CONTACTANOS</Button>
                         </ListItem>
                     </> :
                     <>
                         <ListItem>
-                            <Button id={"button1"}>Welcome</Button>
-                        </ListItem>            
+                            <Button id={"button1"}>WELCOME</Button>
+                        </ListItem>   
+                        <Line></Line>          
                         <ListItem>
-                            <Button id={"button2"}>Specialty</Button>
+                            <Button id={"button2"}>SPECIALTY</Button>
                         </ListItem>
+                        <Line></Line> 
                         <ListItem>
-                            <Button id={"button3"}>Team</Button>
+                            <Button id={"button3"}>TEAM</Button>
                         </ListItem>
+                        <Line></Line> 
                         <ListItem>
-                            <Button id={"button4"}>Locations</Button>
+                            <Button id={"button4"}>LOCATIONS</Button>
                         </ListItem>
+                        <Line></Line> 
                         <ListItem>
-                            <Button id={"button4"}>Contact Us</Button>
+                            <Button id={"button4"}>CONTACT US</Button>
                         </ListItem>
                     </>                
                 }

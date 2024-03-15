@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 const Background = styled.header`
     width: 100%;
-    height: 528px;
+    height: 500px;
     position: relative;
 
     background-image: url("https://res.cloudinary.com/dejj8n6g7/image/upload/v1708531295/2024/MazeConstructions/banner-con-filtro_igdmpx.jpg");
@@ -17,11 +17,11 @@ const Background = styled.header`
 
 const Container = styled.div`
     width: 100%;
-    height: 528px;
-    background-color: #12121365;
+    height: 500px;
+    background-color: #2424242c;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 50% 30%;
+    grid-template-rows: 30% 70%;
     justify-content: center;
     align-items: center;
 

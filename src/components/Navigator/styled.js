@@ -2,14 +2,12 @@ import { styled } from "styled-components"
 
 const Container = styled.nav`
     min-width: 640px;
-    height: 40px;
+    height: 62px;
     background-color: black;
-    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0px 30px;
-
+    background-color: #F6BD00;
     align-self: center;
     justify-self: center;
 
@@ -23,10 +21,11 @@ const Container = styled.nav`
 `;
 
 const ContainerList = styled.ul`
-    width: 100%;
+    width: 88%;
+    max-width: 860px;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -39,19 +38,18 @@ const ContainerList = styled.ul`
 `;
 
 const ListItem = styled.li`
+    width: 140px;
     height: 100%;
-    color: white;    
+    background-color: #F6BD00;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
-    transform: scale(1);
-    animation: transform 0.5s linear;
+    transition: transform 0.5s ease-in-out;
 
     &:hover {
-        transform: scale(1.09);
-        animation: transform 0.5s linear;
+        transform: scale(1.12);
+        transition: transform 0.5s ease;
     }
 
     @media(max-width: 425px) {  
@@ -61,11 +59,14 @@ const ListItem = styled.li`
 `;
 
 const Button = styled.button`
+    width: 100%;
     height: 100%;
-    color: white;
+    color: #FFFFFF;
     background-color: transparent;
     border: none;
     font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
     cursor: pointer;
     text-decoration: none;
     display: flex;
@@ -77,4 +78,11 @@ const Button = styled.button`
     }
 `;
 
-export { Container, ContainerList, ListItem, Button }
+
+const Line = styled.div`
+    width: 2px;
+    height: 60%;
+    background-color: #FFFFFF;
+`;
+
+export { Container, ContainerList, ListItem, Button, Line }
