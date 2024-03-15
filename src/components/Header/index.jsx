@@ -3,6 +3,18 @@ import { Welcome } from "../Welcome";
 import { Logo } from "../Logo";
 import { Language } from "../Language";
 import { useState } from "react";
+import { keyframes } from "styled-components";
+
+// Crear el keyframe para la animación
+const moveRightAnimation = keyframes`
+  0% {
+    transform: translateX(107%);
+    display: grid;
+  }
+  100% {
+    transform: translateX(14%);
+  }
+`;
 
 const Header = (props) => {
 
@@ -25,7 +37,11 @@ const Header = (props) => {
                 <Language clickON={handleClick} selectLanguage={props.selectLanguage} ></Language>
             </Box>
             {buttonState ? 
-                <BackgorundContainer style={{backgroundImage: `url(${"/background-lan.svg"})`}}>
+                <BackgorundContainer 
+                    style={{
+                        
+                        animation: `${buttonState ? "none" : `${moveRightAnimation} 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards`}`
+                    }}>
                     <Title>SELECCIONA TU IDOMA</Title>
                     <BtnSpanish                       
                         onClick={() => selectLanguage("ES")}

@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled, keyframes } from "styled-components";
 
 const Background = styled.header`
     width: 100%;
@@ -44,34 +44,34 @@ const Box = styled.div`
 `;
 
 const BackgorundContainer = styled.div`
-    width: 318px;
-    height: 240px;
+    width: 300px;
+    height: 200px;
     position: absolute;
-    right: 4vh;
-    top: 92px;
+    right: 0;
+    top: 160px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 14% 16% 30% 30%;   
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;  
+    grid-template-rows: 30% 35% 35%;   
+    background-color: #F6BD00; 
+  
+    border-radius: 16px 0px 0px 16px;
 
     @media(max-width: 425px) { 
-        width: 268px;
-        height: 240px;
-        grid-template-rows: 14% 20% 29% 28%;   
-        right: 3vh;
-        top: 58px;
+        width: 220px;
+        height: 160px;
+        right: 0;
+        top: 92px;
+        border-radius: 12px 0px 0px 12px;
     }  
 `;
 
 const Title = styled.h2`
     width: 80%;
     height: 40%;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     font-size: 16px;
     text-align: center;
-    align-self: end;
+    align-self: center;
     justify-self: center;
     display: grid;
     place-content: center;
@@ -87,7 +87,7 @@ const BtnLanguage = styled.button`
     width: 188px;
     height: 52px;
     justify-self: center;
-    align-self: end;
+    align-self: center;
     border-radius: 6px;
     border: none;
     cursor: pointer;
@@ -110,11 +110,11 @@ const BtnLanguage = styled.button`
 `;
 
 const BtnSpanish = styled(BtnLanguage)`
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
 `;
 
 const BtnEnglish = styled(BtnLanguage)`
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
 `;
 
 const Flag = styled.span`
