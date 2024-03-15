@@ -12,16 +12,15 @@ const Container = styled.nav`
     justify-self: center;
 
     @media(max-width: 425px) {  
-        width: 312px;
+        width: 100%;
         min-width: 0px;
-        height: 80px; 
-        border-radius: 16px;
+        height: 90px; 
         padding: 0px 12px;
     }
 `;
 
 const ContainerList = styled.ul`
-    width: 88%;
+    width: 96%;
     max-width: 860px;
     height: 100%;
     display: flex;
@@ -34,6 +33,7 @@ const ContainerList = styled.ul`
         display: flex;        
         flex-wrap: wrap;
         align-items: center;
+        justify-content: space-evenly;
     }
 `;
 
@@ -54,6 +54,7 @@ const ListItem = styled.li`
 
     @media(max-width: 425px) {  
         font-size: 14px;
+        width: 120px;
         height: 32px;
     }
 `;
@@ -75,6 +76,7 @@ const Button = styled.button`
 
     @media(max-width: 425px) {  
         height: 32px;
+        font-size: 14px;
     }
 `;
 
@@ -83,6 +85,10 @@ const Line = styled.div`
     width: 2px;
     height: 60%;
     background-color: #FFFFFF;
+
+    @media(max-width: 425px) {  
+        display: none;
+    }
 `;
 
 export { Container, ContainerList, ListItem, Button, Line }
