@@ -2,7 +2,6 @@ import { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, Btn
 import { Welcome } from "../Welcome";
 import { Logo } from "../Logo";
 import { Language } from "../Language";
-import { Navigator } from "../Navigator";
 import { useState } from "react";
 
 const Header = (props) => {
@@ -46,9 +45,7 @@ const Header = (props) => {
                 <Welcome>Somos tu socio confiable en Los Santos, Vice City & Liberty City.</Welcome> :
                 <Welcome>We are your reliable partner in Los Santos, Vice City & Liberty City.</Welcome>     
             }          
-            <Navigator
-                selectLanguage={props.selectLanguage} 
-            ></Navigator>
+           
         </Container>
        </Background>
     );

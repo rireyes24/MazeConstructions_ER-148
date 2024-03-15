@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const Container = styled.button`
-    width: 100px;
-    height: 80px;
+    width: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +11,8 @@ const Container = styled.button`
     background-color: transparent;
     border: none;    
     grid-row: 1;
-    margin-right: 42px;    
+    margin-right: 72px;   
+    margin-top: 24px; 
 
     @media(max-width: 425px) { 
         width: 52px;
