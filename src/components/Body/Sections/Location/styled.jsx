@@ -16,8 +16,10 @@ const ContainerLocation = styled(Sections)`
     flex-direction: column;
     justify-content: space-around;
     padding: 20px 0px;    
-    background-color:  #f8f8f8;
-    padding: 34px 0px;
+    background-color:  #ffffff;
+    padding: 34px 0px;    
+    margin-top: 54px;
+    margin-bottom: 34px;
 
     @media(max-width: 425px) {        
         height: 1400px;

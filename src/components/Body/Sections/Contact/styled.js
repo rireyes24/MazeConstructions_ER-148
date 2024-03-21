@@ -8,7 +8,9 @@ const Container = styled.section`
     align-items: center;
     justify-content: center;
     background-color:  #FFFFFF;
-    padding: 34px 2%;
+    padding: 34px 2%;    
+    margin-top: 54px;
+    margin-bottom: 34px;
 
     @media(max-width: 425px) {        
         height: 1000px;

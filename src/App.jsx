@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 function App() {
 
-  const [selectLanguage, setSelectLanguage] = useState("ES");
+  const [selectLanguage, setSelectLanguage] = useState("EN");
   
   return (
     <>

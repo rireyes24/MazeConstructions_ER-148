@@ -11,9 +11,11 @@ const Sections = styled.section`
 const SpecialtyContainer = styled(Sections)`
     width: 100%;
     height: 760px;
-    background-color: #f8f8f8;
+    background-color: white;
     justify-content: space-around;
-    padding: 34px 0px;
+    padding: 34px 0px;    
+    margin-top: 54px;
+    margin-bottom: 34px;
 
     @media(max-width: 425px) {         
         display: flex; 

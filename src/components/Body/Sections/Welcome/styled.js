@@ -14,7 +14,9 @@ const Welcome = styled(Sections)`
     grid-template-rows: 30% 70%;
     grid-template-columns: 55% 45%;
     padding-bottom:80px;
-    background-color: #FFFFFF;
+    background-color: white;
+    margin-top: 54px;
+    margin-bottom: 34px;
 
     @media(max-width: 425px) {         
         display: flex; 
