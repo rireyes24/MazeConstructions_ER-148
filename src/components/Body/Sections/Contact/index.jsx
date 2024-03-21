@@ -79,7 +79,10 @@ const Contact = (props) => {
             }
             <ContainerContact>
                 <ContainerNetworks>
-                    <H3>Envianos un mensaje al indox o siguenos en nuestras redes sociales</H3>
+                    {props.selectLanguage === "ES" ? 
+                         <H3>Envianos un mensaje al indox o siguenos en nuestras redes sociales</H3> :
+                         <H3>Send us a message to our inbox or follow us on our social media channels</H3>
+                    }                   
                     <NetworksTable>
                         {dataNetworks.map((data, index) => {
                             return(
@@ -100,7 +103,10 @@ const Contact = (props) => {
                 </ContainerNetworks>
                 <Line></Line>
                 <ContainerForm>
-                    <H3>Envianos un correo para agendar una cita</H3>
+                    {props.selectLanguage === "ES" ? 
+                        <H3>Envianos un correo para agendar una cita</H3> :
+                        <H3>Send us an email to schedule an appointment</H3>
+                    }                    
                     <EmailForm></EmailForm>
                 </ContainerForm>
             </ContainerContact>

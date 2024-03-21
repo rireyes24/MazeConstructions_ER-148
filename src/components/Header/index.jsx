@@ -42,18 +42,29 @@ const Header = (props) => {
                         
                         animation: `${buttonState ? "none" : `${moveRightAnimation} 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards`}`
                     }}>
-                    <Title>SELECCIONA TU IDOMA</Title>
+
+                    {props.selectLanguage === "ES" ? 
+                        <Title>SELECCIONA TU IDOMA</Title> :
+                        <Title>SELECT YOUR LANGUAGE</Title>
+                    }   
+                    
                     <BtnSpanish                       
                         onClick={() => selectLanguage("ES")}
                     >
                         <Flag style={{backgroundImage: `url(${"/guatemalaGT.png"})`}}></Flag>
-                        <Text>ESPAÑOL</Text>
+                        {props.selectLanguage === "ES" ?
+                            <Text>ESPANOL</Text> :
+                            <Text>SPANISH</Text>
+                        }
                     </BtnSpanish>
                     <BtnEnglish 
                         onClick={() => selectLanguage("EN")
                     }>
                         <Flag style={{backgroundImage: `url(${"/united-statesUS.png"})`}}></Flag>
-                        <Text>INGLES</Text>
+                        {props.selectLanguage === "ES" ?
+                            <Text>INGLES</Text> :
+                            <Text>ENGLISH</Text>
+                        }
                     </BtnEnglish>
                 </BackgorundContainer> : <></>
             }
