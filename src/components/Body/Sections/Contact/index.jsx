@@ -107,7 +107,9 @@ const Contact = (props) => {
                         <H3>Envianos un correo para agendar una cita</H3> :
                         <H3>Send us an email to schedule an appointment</H3>
                     }                    
-                    <EmailForm></EmailForm>
+                    <EmailForm
+                        selectLanguage={props.selectLanguage}
+                    ></EmailForm>
                 </ContainerForm>
             </ContainerContact>
         </Container>

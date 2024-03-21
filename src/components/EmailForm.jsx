@@ -112,7 +112,7 @@ const Send = styled.p`
     color: green;
 `;
 
-const EmailForm = () => {
+const EmailForm = (props) => {
 
     const [nameClient, setNameClient] = useState("");
     const [email, setEmail] = useState("");
@@ -173,14 +173,19 @@ const EmailForm = () => {
             <Container>                
                 <FormContainer onSubmit={sendMessage} method="POST">  
                     <TextBox 
-                        placeholder="Nombre*" 
+                        placeholder={props.selectLanguage === "ES" ? "Nombre*" : "Name*"} 
                         id="name" 
                         type="text" 
                         name="name"
                         value={nameClient}
                         onChange={(e) => setNameClient(e.target.value)}
                     ></TextBox>
-                    {hasContentName ? <Error>OBLIGATORIO: Por favor ingrese su nombre!</Error> : <></>}
+                    {hasContentEmail ? 
+                        props.selectLanguage === "ES" ?
+                            <Error>OBLIGATORIO: Por favor ingrese su nombre!</Error> :
+                            <Error>REQUIRED: Please enter your name!</Error>
+                    : <></>}
+                    {hasContentName ? <Error></Error> : <></>}
                    
                    <TextBox 
                         placeholder="Email*" 
@@ -188,11 +193,15 @@ const EmailForm = () => {
                         type="email" 
                         name="email" value={email}
                         onChange={(e) => setEmail(e.target?.value)}
-                    ></TextBox>
-                     {hasContentEmail ? <Error>OBLIGATORIO: Por favor ingrese su correo!</Error> : <></>}
+                    ></TextBox>                    
+                    {hasContentEmail ? 
+                        props.selectLanguage === "ES" ?
+                            <Error>OBLIGATORIO: Por favor ingrese su correo!</Error> :
+                            <Error>REQUIRED: Please enter your email address!</Error>
+                    : <></>}
 
                     <TextBox 
-                        placeholder="Asunto" 
+                        placeholder={props.selectLanguage === "ES" ? "Asunto*" : "Affair*"}
                         id="affair" 
                         type="text" 
                         name="affair"
@@ -201,16 +210,28 @@ const EmailForm = () => {
                     ></TextBox>
                                      
                     <TextArea 
-                        placeholder="Mensaje*" 
+                        placeholder={props.selectLanguage === "ES" ? "Mensaje*" : "Message*"} 
                         id="message" 
                         name="Mensaje" 
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                     ></TextArea>
-                    {hasContentMessage ? <Error>OBLIGATORIO: Por favor escriba un mensaje!</Error> : <></>}
+                    {hasContentEmail ? 
+                        props.selectLanguage === "ES" ?
+                            <Error>OBLIGATORIO: Por favor escriba un mensaje!</Error> :
+                            <Error>REQUIRED: Please write a message!</Error>
+                    : <></>}
+                    {hasContentMessage ? <Error></Error> : <></>}
                    
-                    <SubmitButton type="submit">ENVIAR</SubmitButton>
-                    {msjSended ? <Send>CORREO ENVIADO: Pronto nos contactaremos</Send> : <></> }
+                    {props.selectLanguage === "ES" ? 
+                        <SubmitButton type="submit">ENVIAR</SubmitButton> : 
+                        <SubmitButton type="submit">SEND</SubmitButton>
+                    }                    
+                    {msjSended ? 
+                        props.selectLanguage === "ES" ?
+                            <Send>CORREO ENVIADO: Pronto nos contactaremos</Send> : 
+                            <Send>EMAIL SENT: We will contact you soon</Send>
+                    : <></> }
                 </FormContainer>
             </Container>
         </>
