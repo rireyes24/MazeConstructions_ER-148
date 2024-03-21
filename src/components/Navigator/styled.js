@@ -39,7 +39,7 @@ const ContainerList = styled.ul`
 
 const ListItem = styled.li`
     width: 140px;
-    height: 100%;
+    height: 78%;
     background-color: #F6BD00;
     list-style: none;
     display: flex;
