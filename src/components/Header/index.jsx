@@ -4,6 +4,7 @@ import { Logo } from "../Logo";
 import { Language } from "../Language";
 import { useState } from "react";
 import { keyframes } from "styled-components";
+import { languages } from "../../data/dataLanguages";
 
 // Crear el keyframe para la animación
 const moveRightAnimation = keyframes`
@@ -23,10 +24,10 @@ const Header = (props) => {
     function handleClick(){
         setButtonState(!buttonState);
     }
-
-    function selectLanguage(lan){
+    
+    function changeLanguage(lan) {
         setButtonState(false);
-        props.setSelectLanguage(lan);
+        props.setDataLanguage(lan);
     }
 
     return (
@@ -38,50 +39,35 @@ const Header = (props) => {
             </Box>
             {buttonState ? 
                 <BackgorundContainer 
-                    style={{
-                        
+                    style={{                        
                         animation: `${buttonState ? "none" : `${moveRightAnimation} 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards`}`
                     }}>
 
                     {props.selectLanguage === "ES" ? 
                         <Title>SELECCIONA TU IDOMA</Title> :
                         <Title>SELECT YOUR LANGUAGE</Title>
-                    }   
-                    
-                    <BtnSpanish                       
-                        onClick={() => selectLanguage("ES")}
-                    >
-                        <Flag style={{backgroundImage: `url(${"/spainES.png"})`}}></Flag>
-                        {props.selectLanguage === "ES" ?
-                            <Text>ESPANOL</Text> :
-                            <Text>SPANISH</Text>
-                        }
-                    </BtnSpanish>
+                    }                       
                     <BtnEnglish 
-                        onClick={() => selectLanguage("EN")
+                        onClick={() => changeLanguage(languages[0])
                     }>
                         <Flag style={{backgroundImage: `url(${"/united-statesUS.png"})`}}></Flag>
-                        {props.selectLanguage === "ES" ?
-                            <Text>INGLES</Text> :
-                            <Text>ENGLISH</Text>
-                        }
+                        <Text>{props.dataLanguage.languages.en}</Text>
                     </BtnEnglish>
+                    <BtnSpanish                       
+                        onClick={() => changeLanguage(languages[1])}
+                    >
+                        <Flag style={{backgroundImage: `url(${"/spainES.png"})`}}></Flag>
+                        <Text>{props.dataLanguage.languages.es}</Text>
+                    </BtnSpanish>
                     <BtnHebrew 
-                        onClick={() => selectLanguage("HE")
+                        onClick={() => changeLanguage(languages[2])
                     }>
                         <Flag style={{backgroundImage: `url(${"/israelHE.png"})`}}></Flag>
-                        {props.selectLanguage === "HE" ?
-                            <Text>HEBREO</Text> :
-                            <Text>HEBREW</Text>
-                        }
+                        <Text>{props.dataLanguage.languages.he}</Text>
                     </BtnHebrew>
                 </BackgorundContainer> : <></>
             }
-            {props.selectLanguage === "ES" ? 
-                <Welcome>Somos tu socio confiable en Los Santos, Vice City & Liberty City.</Welcome> :
-                <Welcome>We are your reliable partner in Los Santos, Vice City & Liberty City.</Welcome>     
-            }          
-           
+            <Welcome>{props.dataLanguage.data.welcome}</Welcome>           
         </Container>
        </Background>
     );

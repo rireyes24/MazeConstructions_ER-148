@@ -11,6 +11,7 @@ export default function Main (props) {
         <Container>
             <WelcomeToMaze
                 selectLanguage={props.selectLanguage} 
+                dataLanguage={props.dataLanguage}
             ></WelcomeToMaze>
             <Specialty
                 selectLanguage={props.selectLanguage} 
