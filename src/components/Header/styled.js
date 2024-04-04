@@ -45,13 +45,13 @@ const Box = styled.div`
 
 const BackgorundContainer = styled.div`
     width: 300px;
-    height: 200px;
+    height: 300px;
     position: absolute;
     right: 0;
     top: 160px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 35% 35%;   
+    grid-template-rows: 30% 20% 20% 20%;   
     background-color: #F6BD00; 
   
     border-radius: 16px 0px 0px 16px;
@@ -117,6 +117,10 @@ const BtnEnglish = styled(BtnLanguage)`
     grid-row: 3 / 4;
 `;
 
+const BtnHebrew = styled(BtnLanguage)`
+    grid-row: 4 / 5;
+`;
+
 const Flag = styled.span`
     display: block;
     width: 60px;
@@ -144,4 +148,4 @@ const Text = styled.h3`
     }
 `;
 
-export { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, BtnEnglish, Flag, Text }
+export { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, BtnEnglish, BtnHebrew, Flag, Text }

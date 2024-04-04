@@ -1,4 +1,4 @@
-import { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, BtnEnglish, Flag, Text } from "./styled";
+import { Background, Container, Box, BackgorundContainer, Title, BtnSpanish, BtnEnglish, Flag, BtnHebrew, Text } from "./styled";
 import { Welcome } from "../Welcome";
 import { Logo } from "../Logo";
 import { Language } from "../Language";
@@ -66,6 +66,15 @@ const Header = (props) => {
                             <Text>ENGLISH</Text>
                         }
                     </BtnEnglish>
+                    <BtnHebrew 
+                        onClick={() => selectLanguage("HE")
+                    }>
+                        <Flag style={{backgroundImage: `url(${"/israelHE.png"})`}}></Flag>
+                        {props.selectLanguage === "HE" ?
+                            <Text>HEBREO</Text> :
+                            <Text>HEBREW</Text>
+                        }
+                    </BtnHebrew>
                 </BackgorundContainer> : <></>
             }
             {props.selectLanguage === "ES" ? 
