@@ -51,7 +51,7 @@ const Header = (props) => {
                     <BtnSpanish                       
                         onClick={() => selectLanguage("ES")}
                     >
-                        <Flag style={{backgroundImage: `url(${"/guatemalaGT.png"})`}}></Flag>
+                        <Flag style={{backgroundImage: `url(${"/spainES.png"})`}}></Flag>
                         {props.selectLanguage === "ES" ?
                             <Text>ESPANOL</Text> :
                             <Text>SPANISH</Text>

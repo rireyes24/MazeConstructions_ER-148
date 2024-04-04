@@ -48,7 +48,7 @@ const Language = ({clickON, selectLanguage}) => {
     return (
         <Container onClick={() => clickON()}>
             {selectLanguage === "ES" ? 
-                <Icon style={{backgroundImage: `url(${"/guatemalaGT.png"})`}}/> : 
+                <Icon style={{backgroundImage: `url(${"/spainES.png"})`}}/> : 
                 <Icon style={{backgroundImage: `url(${"/united-statesUS.png"})`}}/>
             }
             <Text>Spanish</Text>          
