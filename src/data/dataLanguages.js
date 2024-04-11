@@ -78,8 +78,16 @@ const languages = [
                         },
                     ]
                 },
-                contact: "Contact",
+                contact: {
+                    title: "Contact Us",
+                    description: "Send us an email to schedule an appointment",
+                    description2: "Send us a message to our inbox or follow us on our social media channels",
+                }
             }
+        },
+        footer: {
+          copyright: "Copyright © 2024. Todos los derechos reservados.",
+          designBy: "Website designed by",
         }
       } 
     },
@@ -165,8 +173,16 @@ const languages = [
                         },                        
                     ]
                 },
-                contact: "Contact",
+                contact: {
+                    title: "Contactanos",
+                    description: "Envianos un correo para agendar una cita",
+                    description2: "Envianos un mensaje al indox o siguenos en nuestras redes sociales",
+                },
             }
+        },
+        footer: {
+            copyright: "Copyright © 2024. Todos los derechos reservados.",
+            designBy: "Sitio Web diseñado por",
         }
       } 
     },

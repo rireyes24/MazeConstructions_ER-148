@@ -73,16 +73,12 @@ const dataNetworks = [
 const Contact = (props) => {
     return(
         <Container>
-            {props.selectLanguage === "ES" ? 
-                <Title>CONTACTANOS</Title> : 
-                <Title>CONTACT US</Title>
-            }
+            <Title>{props.dataLanguage.data.body.sections.contact.title}</Title>
+
             <ContainerContact>
                 <ContainerNetworks>
-                    {props.selectLanguage === "ES" ? 
-                         <H3>Envianos un mensaje al indox o siguenos en nuestras redes sociales</H3> :
-                         <H3>Send us a message to our inbox or follow us on our social media channels</H3>
-                    }                   
+
+                    <H3>{props.dataLanguage.data.body.sections.contact.description2}</H3>                 
                     <NetworksTable>
                         {dataNetworks.map((data, index) => {
                             return(
@@ -103,10 +99,8 @@ const Contact = (props) => {
                 </ContainerNetworks>
                 <Line></Line>
                 <ContainerForm>
-                    {props.selectLanguage === "ES" ? 
-                        <H3>Envianos un correo para agendar una cita</H3> :
-                        <H3>Send us an email to schedule an appointment</H3>
-                    }                    
+
+                    <H3>{props.dataLanguage.data.body.sections.contact.description}</H3>
                     <EmailForm
                         selectLanguage={props.selectLanguage}
                     ></EmailForm>

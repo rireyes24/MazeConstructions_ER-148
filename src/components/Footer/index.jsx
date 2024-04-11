@@ -53,15 +53,12 @@ const MyLogo = styled.a`
     }
 `;
 
-const Footer = ({selectLanguage}) => {
+const Footer = (props) => {
     return (
         <Container>
             <Logo height={"68px"}></Logo>
             <MyLogoContainer>
-                {selectLanguage === "ES" ?
-                    <Text>Sitio Web diseñado por: </Text> :
-                    <Text>Website designed by: </Text>                
-                }
+                <Text>{props.dataLanguage.data.footer.designBy}</Text>
                 <MyLogo 
                     style={{backgroundImage: `url(${"/public/Rireyes_Light.svg"})`}}
                     href="https://rireyesdev24.netlify.app/"

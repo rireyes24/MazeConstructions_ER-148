@@ -32,6 +32,7 @@ function App() {
         ></Main>
         <Footer
           selectLanguage={selectLanguage} 
+          dataLanguage={dataLanguage}
         ></Footer>
       </div>     
     </>
