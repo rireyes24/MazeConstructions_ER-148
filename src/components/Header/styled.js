@@ -109,8 +109,6 @@ const BtnLanguage = styled.button`
     }  
 `;
 
-
-
 const BtnEnglish = styled(BtnLanguage)`
     grid-row: 2 / 3;
 `;

@@ -44,14 +44,18 @@ const Text = styled.p`
     align-items: center;    
 `;
 
-const Language = ({clickON, selectLanguage}) => {
+const Language = ({clickON, dataLanguage, selectLanguage}) => {
     return (
         <Container onClick={() => clickON()}>
-            {selectLanguage === "ES" ? 
-                <Icon style={{backgroundImage: `url(${"/spainES.png"})`}}/> : 
-                <Icon style={{backgroundImage: `url(${"/united-statesUS.png"})`}}/>
+            
+            {dataLanguage.prefix === "EN" ? 
+                <Icon style={{backgroundImage: `url(${"/united-statesUS.png"})`}}/> :
+                (dataLanguage.prefix === "ES" ?
+                    <Icon style={{backgroundImage: `url(${"/spainES.png"})`}}/> :
+                    <Icon style={{backgroundImage: `url(${"/israelHE.png"})`}}/>
+                )
             }
-            <Text>Spanish</Text>          
+            <Text>{dataLanguage.name}</Text>          
         </Container>
     );
 };

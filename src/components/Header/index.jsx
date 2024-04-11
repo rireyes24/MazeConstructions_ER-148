@@ -35,14 +35,18 @@ const Header = (props) => {
          <Container>
             <Box>
                 <Logo></Logo>
-                <Language clickON={handleClick} selectLanguage={props.selectLanguage} ></Language>
+                <Language 
+                    clickON={handleClick} 
+                    selectLanguage={props.selectLanguage}
+                    dataLanguage={props.dataLanguage}
+                ></Language>
             </Box>
             {buttonState ? 
                 <BackgorundContainer 
                     style={{                        
                         animation: `${buttonState ? "none" : `${moveRightAnimation} 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards`}`
                     }}>
-                        
+
                     <Title>{props.dataLanguage.languages.title.toUpperCase()}</Title>
 
                     <BtnEnglish 
