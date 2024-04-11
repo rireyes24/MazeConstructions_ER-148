@@ -4,6 +4,7 @@ const languages = [
       name: "English",
       prefix: "EN",
       languages: {
+        title: "Select your language",
         en: "English",
         es: "Spanish",
         he: "Hebrew",
@@ -96,6 +97,7 @@ const languages = [
       name: "Español",
       prefix: "ES",
       languages: {
+        title: "Seleccione su idioma",
         en: "Ingles",
         es: "Español",
         he: "Hebreo",

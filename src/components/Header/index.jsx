@@ -42,32 +42,33 @@ const Header = (props) => {
                     style={{                        
                         animation: `${buttonState ? "none" : `${moveRightAnimation} 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards`}`
                     }}>
+                        
+                    <Title>{props.dataLanguage.languages.title.toUpperCase()}</Title>
 
-                    {props.selectLanguage === "ES" ? 
-                        <Title>SELECCIONA TU IDOMA</Title> :
-                        <Title>SELECT YOUR LANGUAGE</Title>
-                    }                       
                     <BtnEnglish 
                         onClick={() => changeLanguage(languages[0])
                     }>
                         <Flag style={{backgroundImage: `url(${"/united-statesUS.png"})`}}></Flag>
                         <Text>{props.dataLanguage.languages.en}</Text>
                     </BtnEnglish>
+
                     <BtnSpanish                       
                         onClick={() => changeLanguage(languages[1])}
                     >
                         <Flag style={{backgroundImage: `url(${"/spainES.png"})`}}></Flag>
                         <Text>{props.dataLanguage.languages.es}</Text>
                     </BtnSpanish>
+
                     <BtnHebrew 
                         onClick={() => changeLanguage(languages[2])
                     }>
                         <Flag style={{backgroundImage: `url(${"/israelHE.png"})`}}></Flag>
                         <Text>{props.dataLanguage.languages.he}</Text>
                     </BtnHebrew>
+
                 </BackgorundContainer> : <></>
             }
-            <Welcome>{props.dataLanguage.data.welcome}</Welcome>           
+            <Welcome>{props.dataLanguage.data.header.welcome}</Welcome>           
         </Container>
        </Background>
     );

@@ -109,11 +109,13 @@ const BtnLanguage = styled.button`
     }  
 `;
 
-const BtnSpanish = styled(BtnLanguage)`
+
+
+const BtnEnglish = styled(BtnLanguage)`
     grid-row: 2 / 3;
 `;
 
-const BtnEnglish = styled(BtnLanguage)`
+const BtnSpanish = styled(BtnLanguage)`
     grid-row: 3 / 4;
 `;
 

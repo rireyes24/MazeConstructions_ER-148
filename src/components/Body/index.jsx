@@ -9,24 +9,19 @@ import { Contact } from "./Sections/Contact"
 export default function Main (props) {
     return (
         <Container>
-            <WelcomeToMaze
-                selectLanguage={props.selectLanguage} 
+            <WelcomeToMaze                 
                 dataLanguage={props.dataLanguage}
             ></WelcomeToMaze>
-            <Specialty
-                selectLanguage={props.selectLanguage} 
+            <Specialty                
                 dataLanguage={props.dataLanguage}
             ></Specialty>
-            <Team
-                selectLanguage={props.selectLanguage} 
+            <Team                
                 dataLanguage={props.dataLanguage}
             ></Team>            
-            <Location
-                selectLanguage={props.selectLanguage} 
+            <Location                
                 dataLanguage={props.dataLanguage}
             ></Location>
-            <Contact
-                selectLanguage={props.selectLanguage} 
+            <Contact                
                 dataLanguage={props.dataLanguage}
             ></Contact>
         </Container>
