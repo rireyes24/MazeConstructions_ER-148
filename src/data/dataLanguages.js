@@ -21,7 +21,31 @@ const languages = [
                     we continue to always provide high-quality service, recognized for our ability to turn our clients' 
                     dreams into reality.`,
                 },
-                specialty: "Specialty",
+                specialty: {
+                    title: "Our Specialty",
+                    description: "We specialize in a wide range of construction services, from residential to commercial projects, ensuring exceptional results at every step of the way.",
+                    description2: "Current projects under construction",
+                    projects: [
+                      {
+                        name: "Construction of actor Matt Phillips' house",
+                        address: "Pinewood Boulevard, Los Santos",
+                        alt: "House in Construction",
+                        url: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-casas_pduxo2.jpg" ,
+                      },
+                      {
+                        name: "Construction of the Cinnamon Shopping Center",
+                        address: "Coconut Beach, Vice City",
+                        alt: "Shopping Center in Construction",
+                        url: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-locales_kntlgk.jpg" ,
+                      },
+                      {
+                        name: "Construction of the Skyler Building",
+                        address: "Liberty Avenue, Liberty City",
+                        alt: "Building in Construction",
+                        url: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-edificios_gtaksa.jpg" ,
+                      },
+                    ]
+                },
                 team: "Team",
                 location: "Location",
                 contact: "Contact",
@@ -51,7 +75,31 @@ const languages = [
                     de alta calidad, somos reconocidos por nuestra habilidad para convertir los sueños de nuestros clientes
                     en realidad.`,
                 },
-                specialty: "Specialty",
+                specialty: {
+                    title: "Nuestra Especialidad",
+                    description: "Nos especializamos en una amplia gama de servicios de construcción, desde proyectos residenciales hasta comerciales, asegurando resultados excepcionales en cada paso del camino.",
+                    description2: "Proyectos actuales en construcción",
+                    projects: [
+                      {
+                        name: "Construcción de la casa del actor Matt Phillips",
+                        address: "Pinewood Boulevard, Los Santos",
+                        alt: "Casa en Construcción",
+                        url: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-casas_pduxo2.jpg" ,
+                      },
+                      {
+                        name: "Construcción del Centers Comercial Cinnamon",
+                        address: "Coconut Beach, Vice City",
+                        alt: "Centro Comercial en Construcción",
+                        url: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-locales_kntlgk.jpg" ,
+                      },
+                      {
+                        name: "Construcción del Edificio Skyler",
+                        address: "Liberty Avenue, Liberty City", 
+                        alt: "Edificio Skyler en Construcción",   
+                        url: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1708550601/2024/MazeConstructions/construccion-edificios_gtaksa.jpg" ,
+                      },
+                    ],
+                },
                 team: "Team",
                 location: "Location",
                 contact: "Contact",
