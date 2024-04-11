@@ -3,6 +3,9 @@ import { Title } from "../../../Title";
 import { dataLocation } from "../../../../data/dataLocation";
 
 const Location = (props) => {
+
+    const ourLocations = props.dataLanguage.data.body.sections.location.locations;
+
     return(
         <ContainerLocation id="section4">
                 
@@ -11,12 +14,12 @@ const Location = (props) => {
                     <Title>Our Locations</Title>
                 }
                 <Box>
-                    {dataLocation.map((data) => {
+                    {ourLocations.map((data) => {
                         return(
                             <MiniBox href={data.map} target="_blank">
                                 <MiniBoxData>
-                                    <City>{data.city}</City>
-                                    <Phone>{data.telephone}</Phone>
+                                    <City>{data.city.toUpperCase()}</City>
+                                    <Phone>TEL: {data.telephone}</Phone>
                                     <Address>{data.address}</Address>
                                 </MiniBoxData>
                                 <MazeImage
