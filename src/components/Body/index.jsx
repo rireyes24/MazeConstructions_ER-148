@@ -15,15 +15,19 @@ export default function Main (props) {
             ></WelcomeToMaze>
             <Specialty
                 selectLanguage={props.selectLanguage} 
+                dataLanguage={props.dataLanguage}
             ></Specialty>
             <Team
                 selectLanguage={props.selectLanguage} 
+                dataLanguage={props.dataLanguage}
             ></Team>            
             <Location
                 selectLanguage={props.selectLanguage} 
+                dataLanguage={props.dataLanguage}
             ></Location>
             <Contact
                 selectLanguage={props.selectLanguage} 
+                dataLanguage={props.dataLanguage}
             ></Contact>
         </Container>
     )
