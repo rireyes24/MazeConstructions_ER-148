@@ -13,6 +13,10 @@ const ExperienceCard = styled.span`
     background-size: contain;
     width: 120px;
     height: 160px;
+
+    @media(max-width: 425px) {
+        display: none;
+    }
 `;
 
 const WelcomeToMaze = (props) => {
