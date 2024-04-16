@@ -12,11 +12,12 @@ const Team = (props) => {
                 <Description>{props.dataLanguage.data.body.sections.team.description}</Description>
                 
                 <BoxTeam>
-                    {dataTeam.map((item) => {
+                    {dataTeam.map((item, index) => {
                         return(
                             <MazeImage
                                 src={item.url} 
                                 name={item.alt}
+                                key={index}
                             />
                         );
                     })}                   

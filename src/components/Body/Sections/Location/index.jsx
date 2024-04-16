@@ -12,9 +12,9 @@ const Location = (props) => {
                 <Title>{props.dataLanguage.data.body.sections.location.title}</Title>
                 
                 <Box>
-                    {ourLocations.map((data) => {
+                    {ourLocations.map((data, index) => {
                         return(
-                            <MiniBox href={data.map} target="_blank">
+                            <MiniBox href={data.map} target="_blank" key={index}>
                                 <MiniBoxData>
                                     <City>{data.city.toUpperCase()}</City>
                                     <Phone>TEL: {data.telephone}</Phone>

@@ -82,17 +82,16 @@ const Contact = (props) => {
                     <NetworksTable>
                         {dataNetworks.map((data, index) => {
                             return(
-                                <>
+                                <div key={index}>
                                     {index === 4 ?
                                         <span></span> :
                                         <Network 
                                             href={data.url} 
-                                            target="_blank" 
-                                            key={data.id}
-                                            style={{backgroundImage: `url(${data.icon})`}}
+                                            target="_blank"                                             
+                                            style={{backgroundImage: `url(${data.icon})`}}                                           
                                         ></Network>
                                     }
-                                </>
+                                </div>
                             )
                         })}
                     </NetworksTable>

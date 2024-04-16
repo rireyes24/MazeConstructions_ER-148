@@ -19,9 +19,9 @@ const Specialty = (props) => {
             <Description>{props.dataLanguage.data.body.sections.specialty.description2}</Description>
                        
             <ContainerBox>
-                {projects.map((data) => {
+                {projects.map((data, index) => {
                     return(
-                        <Box>
+                        <Box key={index}>
                             <MazeImage
                                 src={data.url} 
                                 alt={data.alt}                    
