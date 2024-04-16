@@ -17,10 +17,12 @@ const Container = styled.button`
     padding: 1%;
 
     @media(max-width: 425px) { 
-        width: 52px;
-        height: 38px;
+        width: 122px;
+        height: 48px;
         align-self: center;
         margin-right: 24px;
+        font-size: 14px;
+        border: 2px solid #FFC500;    
     }
 `;
 
@@ -31,6 +33,12 @@ const Icon = styled.span`
     background-repeat: no-repeat;
     background-position: center;  
     margin-right: 6px;
+
+    @media(max-width: 425px) { 
+        width: 64px;
+        height: 24px;
+        margin-right: 4px;
+    }
 `;
 
 const Text = styled.p`
@@ -41,7 +49,12 @@ const Text = styled.p`
     margin: 0;
     color: #ffffff;
     display: flex;
-    align-items: center;    
+    align-items: center;  
+    
+    @media(max-width: 425px) { 
+        font-size: 14px;
+        margin-right: 2px;
+    }
 `;
 
 const Language = ({clickON, dataLanguage, selectLanguage}) => {
