@@ -10,7 +10,7 @@ function App() {
 
   
 
-  const [dataLanguage, setDataLanguage] = useState(languages[0]);
+  const [dataLanguage, setDataLanguage] = useState(languages[1]);
 
   const [selectLanguage, setSelectLanguage] = useState("EN");
   
@@ -23,8 +23,8 @@ function App() {
           dataLanguage={dataLanguage}
           setDataLanguage={setDataLanguage}
         ></Header>
-        <Navigator
-          selectLanguage={selectLanguage} 
+        <Navigator           
+          dataLanguage={dataLanguage}
         ></Navigator>
         <Main 
           selectLanguage={selectLanguage} 

@@ -9,10 +9,8 @@ const Location = (props) => {
     return(
         <ContainerLocation id="section4">
                 
-                {props.selectLanguage === "ES" ?
-                    <Title>Nuestras Ubicaciones</Title> :
-                    <Title>Our Locations</Title>
-                }
+                <Title>{props.dataLanguage.data.body.sections.location.title}</Title>
+                
                 <Box>
                     {ourLocations.map((data) => {
                         return(

@@ -64,54 +64,31 @@ const Navigator = (props) => {
         }
     }, [])
 
+    const navButtons = props.dataLanguage.data.header.nav;
+
     return (
         <Container>            
             <ContainerList>
-                {props.selectLanguage === "ES" ? 
-                    <>
-                        <ListItem>
-                            <Button id={"button1"}>BIENVENIDO</Button>
-                        </ListItem>
-                        <Line></Line>          
-                        <ListItem>
-                            <Button id={"button2"}>ESPECIALIDAD</Button>
-                        </ListItem>
-                        <Line></Line> 
-                        <ListItem>
-                            <Button id={"button3"}>EQUIPO</Button>
-                        </ListItem>
-                        <Line></Line> 
-                        <ListItem>
-                            <Button id={"button4"}>UBICACIONES</Button>
-                        </ListItem>
-                        <Line></Line> 
-                        <ListItem>
-                            <Button id={"button4"}>CONTACTANOS</Button>
-                        </ListItem>
-                    </> :
-                    <>
-                        <ListItem>
-                            <Button id={"button1"}>WELCOME</Button>
-                        </ListItem>   
-                        <Line></Line>          
-                        <ListItem>
-                            <Button id={"button2"}>SPECIALTY</Button>
-                        </ListItem>
-                        <Line></Line> 
-                        <ListItem>
-                            <Button id={"button3"}>TEAM</Button>
-                        </ListItem>
-                        <Line></Line> 
-                        <ListItem>
-                            <Button id={"button4"}>LOCATIONS</Button>
-                        </ListItem>
-                        <Line></Line> 
-                        <ListItem>
-                            <Button id={"button4"}>CONTACT US</Button>
-                        </ListItem>
-                    </>                
-                }
-            </ContainerList>
+                <ListItem>
+                    <Button id={"button1"}>{navButtons.welcome.toUpperCase()}</Button>
+                </ListItem>
+                <Line></Line>          
+                <ListItem>
+                    <Button id={"button2"}>{navButtons.specialty.toUpperCase()}</Button>
+                </ListItem>
+                <Line></Line> 
+                <ListItem>
+                    <Button id={"button3"}>{navButtons.team.toUpperCase()}</Button>
+                </ListItem>
+                <Line></Line> 
+                <ListItem>
+                    <Button id={"button4"}>{navButtons.location.toUpperCase()}</Button>
+                </ListItem>
+                <Line></Line> 
+                <ListItem>
+                    <Button id={"button4"}>{navButtons.contact.toUpperCase()}</Button>
+                </ListItem>
+            </ContainerList>              
         </Container>
     )
 }

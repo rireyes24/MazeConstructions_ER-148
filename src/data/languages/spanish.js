@@ -11,7 +11,14 @@ const spanish = {
     },
     data: {        
       header: {
-          welcome: "Somos tu socio confiable en Los Santos, Vice City & Liberty City."
+        welcome: "Somos tu socio confiable en Los Santos, Vice City & Liberty City.",
+        nav: {
+            welcome: "Bienvenido",
+            specialty: "Especialidad",
+            team: "Equipo",
+            location: "Ubicación",
+            contact: "Contactanos",
+        }
       },
       body: {
           sections: {
