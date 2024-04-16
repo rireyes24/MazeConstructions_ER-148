@@ -47,7 +47,7 @@ const Header = (props) => {
                         animation: `${buttonState ? "none" : `${moveRightAnimation} 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards`}`
                     }}>
 
-                    <Title>{props.dataLanguage.languages.title.toUpperCase()}</Title>
+                    <Title>{props.dataLanguage.languages.title}</Title>
 
                     <BtnEnglish 
                         onClick={() => changeLanguage(languages[0])

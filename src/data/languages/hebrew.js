@@ -4,9 +4,10 @@ const hebrew  = {
     flag: "/israelHE.png",
     prefix: "HE",
     languages: {
-      en: "אנגלית",
-      es: "ספרדית",
-      he: "עברית",
+        title: "בחר את השפה שלך",
+        en: "אנגלית",
+        es: "ספרדית",
+        he: "עברית",
     },
     data: {
       header: {

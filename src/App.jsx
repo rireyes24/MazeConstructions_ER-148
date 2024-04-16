@@ -10,7 +10,7 @@ function App() {
 
   
 
-  const [dataLanguage, setDataLanguage] = useState(languages[1]);
+  const [dataLanguage, setDataLanguage] = useState(languages[0]);
 
   const [selectLanguage, setSelectLanguage] = useState("EN");
   

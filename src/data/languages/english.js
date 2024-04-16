@@ -13,11 +13,11 @@ const english  = {
       header: {
           welcome: "We are your reliable partner in Los Santos, Vice City & Liberty City.",
           nav: {
-            welcome: "Welcome",
-            specialty: "Specialty",
-            team: "Team",
-            location: "Location",
-            contact: "Contact Us",
+            welcome: "WELCOME",
+            specialty: "SPECTIALITY",
+            team: "TEAM",
+            location: "LOCATION",
+            contact: "CONTACT US",
           }
       },
       body: {
