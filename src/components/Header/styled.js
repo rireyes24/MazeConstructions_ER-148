@@ -58,7 +58,7 @@ const BackgorundContainer = styled.div`
 
     @media(max-width: 425px) { 
         width: 220px;
-        height: 160px;
+        height: 240px;
         right: 0;
         top: 92px;
         border-radius: 12px 0px 0px 12px;
