@@ -9,7 +9,7 @@ const Container = styled.footer`
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: 35% 35% 30%;
+    grid-template-columns: 45% 10% 45%;
     padding: 4% 2%;
 `;
 
@@ -34,6 +34,8 @@ const Text = styled.p`
     color: white;
 
     @media (max-width: 425px) {
+        width: 100%;
+        height: 40px;
         font-size: 12px;
     }
 `;
@@ -49,7 +51,8 @@ const MyLogo = styled.a`
     align-self: center;
 
     @media (max-width: 425px) {
-        width: 80px;
+        width: 100px;
+        
     }
 `;
 
@@ -60,7 +63,7 @@ const Footer = (props) => {
             <MyLogoContainer>
                 <Text>{props.dataLanguage.data.footer.designBy}</Text>
                 <MyLogo 
-                    style={{backgroundImage: `url(${"/public/Rireyes_Light.svg"})`}}
+                    style={{backgroundImage: `url(${"/Rireyes_Light.svg"})`}}
                     href="https://rireyesdev24.netlify.app/"
                     target="_blank"
                 ></MyLogo>

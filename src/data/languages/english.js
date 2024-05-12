@@ -95,7 +95,7 @@ const english  = {
       },
       footer: {
         copyright: "Copyright © 2024. Todos los derechos reservados.",
-        designBy: "Website designed by",
+        designBy: "Website designed by:",
       }
     } 
 };

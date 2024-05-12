@@ -98,7 +98,7 @@ const spanish = {
       },
       footer: {
           copyright: "Copyright © 2024. Todos los derechos reservados.",
-          designBy: "Sitio Web diseñado por",
+          designBy: "Sitio Web diseñado por:",
       }
     } 
 };
